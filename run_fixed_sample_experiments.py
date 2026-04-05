@@ -24,7 +24,6 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from sklearn.cluster import KMeans
 
-from scipy.stats import qmc
 from scipy.spatial.distance import cdist
 
 from tqdm import tqdm
@@ -36,7 +35,7 @@ warnings.filterwarnings('ignore')
 # ============================================================================
 
 FIXED_SAMPLE_SIZES = [50, 100, 200, 250]
-N_REPEATS = 20
+N_REPEATS = 10
 MIN_TEST_SIZE = 10  # Minimum test set size required
 
 MOOT_ROOT = Path("moot/optimize")
@@ -244,95 +243,11 @@ def sample_diversity_maxmin(X, n_samples, rng):
     return np.sort(np.array(selected))
 
 
-def sample_lhs(X, n_samples, rng):
-    """Latin Hypercube Sampling: space-filling design, map to nearest data points."""
-    n_features = X.shape[1]
-    scaler = MinMaxScaler()
-    X_scaled = scaler.fit_transform(X)
-    
-    sampler = qmc.LatinHypercube(d=n_features, seed=rng.integers(0, 10000))
-    lhs_points = sampler.random(n=n_samples)
-    
-    dists = cdist(lhs_points, X_scaled)
-    selected = []
-    available = set(range(len(X)))
-    
-    for i in range(n_samples):
-        sorted_candidates = np.argsort(dists[i])
-        for candidate in sorted_candidates:
-            if candidate in available:
-                selected.append(candidate)
-                available.discard(candidate)
-                break
-    
-    return np.sort(np.array(selected))
-
-
-def sample_sobol(X, n_samples, rng):
-    """Sobol quasi-random sequence: low-discrepancy sampling mapped to nearest data points."""
-    n_features = X.shape[1]
-    scaler = MinMaxScaler()
-    X_scaled = scaler.fit_transform(X)
-    
-    sampler = qmc.Sobol(d=n_features, scramble=True, seed=rng.integers(0, 10000))
-    n_pow2 = max(4, 2 ** int(np.ceil(np.log2(n_samples))))
-    sobol_points = sampler.random(n=n_pow2)[:n_samples]
-    
-    dists = cdist(sobol_points, X_scaled)
-    selected = []
-    available = set(range(len(X)))
-    
-    for i in range(n_samples):
-        sorted_candidates = np.argsort(dists[i])
-        for candidate in sorted_candidates:
-            if candidate in available:
-                selected.append(candidate)
-                available.discard(candidate)
-                break
-    
-    return np.sort(np.array(selected))
-
-
-def sample_active_learning(X, y_obj, n_samples, rng):
-    """Uncertainty-based active learning: start small, iteratively add most uncertain points."""
-    n = len(X)
-    scaler = MinMaxScaler()
-    X_scaled = scaler.fit_transform(X)
-    
-    seed_size = max(5, n_samples // 5)
-    seed_indices = list(rng.choice(n, size=seed_size, replace=False))
-    remaining_budget = n_samples - seed_size
-    
-    selected = list(seed_indices)
-    pool = list(set(range(n)) - set(selected))
-    
-    while remaining_budget > 0 and len(pool) > 0:
-        rf = RandomForestRegressor(n_estimators=30, random_state=42, n_jobs=-1)
-        rf.fit(X_scaled[selected], y_obj[selected])
-        
-        pool_arr = np.array(pool)
-        predictions = np.array([tree.predict(X_scaled[pool_arr]) for tree in rf.estimators_])
-        uncertainty = predictions.std(axis=0).mean(axis=1)
-        
-        batch_size = max(1, min(remaining_budget, max(3, remaining_budget // 3)))
-        top_uncertain_idx = np.argsort(uncertainty)[-batch_size:]
-        new_points = pool_arr[top_uncertain_idx].tolist()
-        
-        selected.extend(new_points)
-        pool = [p for p in pool if p not in set(new_points)]
-        remaining_budget -= len(new_points)
-    
-    return np.sort(np.array(selected[:n_samples]))
-
-
 SAMPLING_METHODS = {
     'Random':          lambda X, y, n, rng: sample_random(X, n, rng),
     'Stratified':      lambda X, y, n, rng: sample_stratified(X, y, n, rng),
     'Clustering':      lambda X, y, n, rng: sample_clustering(X, n, rng),
     'Diversity':       lambda X, y, n, rng: sample_diversity_maxmin(X, n, rng),
-    'LHS':             lambda X, y, n, rng: sample_lhs(X, n, rng),
-    'Sobol':           lambda X, y, n, rng: sample_sobol(X, n, rng),
-    'ActiveLearning':  lambda X, y, n, rng: sample_active_learning(X, y, n, rng),
 }
 
 
