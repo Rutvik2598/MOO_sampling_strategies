@@ -70,9 +70,6 @@ DATASET_PATHS_ALL = {
 # SELECT WHICH DATASET SET TO RUN
 DATASET_PATHS = DATASET_PATHS_LARGE  # <- Change to DATASET_PATHS_ALL for small datasets
 
-# Output file - single unified results file
-OUTPUT_PREFIX = "large_experiments"
-
 # ============================================================================
 # DATASET LOADING
 # ============================================================================
@@ -550,60 +547,56 @@ def main():
     print("  RUNNING EXPERIMENTS")
     print("=" * 70)
     
-    all_results = []
+    # Create results directory
+    results_dir = Path("results")
+    results_dir.mkdir(exist_ok=True)
+    
     start_time = time.time()
     
-    # Group by (dataset, method, sample_size) for better progress tracking
-    configs = []
-    for ds_name in datasets:
-        ds_size = len(datasets[ds_name]['df'])
+    # Process each dataset separately and save to its own file
+    for ds_name in tqdm(list(datasets.keys()), desc="Datasets", unit="ds"):
+        data = datasets[ds_name]
+        true_pf = true_pareto_fronts[ds_name]
+        ds_size = len(data['df'])
+        
+        dataset_results = []
+        
+        # Build configs for this dataset
+        configs = []
         for sample_size in FIXED_SAMPLE_SIZES:
             if sample_size >= ds_size - MIN_TEST_SIZE:
                 continue
             for method_name in SAMPLING_METHODS:
-                configs.append((ds_name, method_name, sample_size))
-    
-    with tqdm(total=len(configs), desc="Configurations", unit="cfg", 
-              bar_format="{l_bar}{bar}| {n_fmt}/{total_fmt} [{elapsed}<{remaining}, {rate_fmt}]") as pbar_config:
+                configs.append((method_name, sample_size))
         
-        for ds_name, method_name, sample_size in configs:
-            data = datasets[ds_name]
-            true_pf = true_pareto_fronts[ds_name]
-            
-            # Inner loop for repeats (no separate bar, just run silently)
+        for method_name, sample_size in tqdm(configs, desc=f"  {ds_name}", leave=False, unit="cfg"):
             for rep in range(N_REPEATS):
                 rng = np.random.default_rng(seed=rep * 1000 + hash(ds_name + method_name) % 10000 + sample_size)
                 result = run_single_experiment(ds_name, data, true_pf, method_name, sample_size, rng)
                 if result is not None:
                     result['repeat'] = rep
-                    all_results.append(result)
-            
-            # Update progress bar with current config info
-            pbar_config.set_postfix({
-                'dataset': ds_name[:8],
-                'method': method_name[:6],
-                'n': sample_size
-            })
-            pbar_config.update(1)
+                    dataset_results.append(result)
+        
+        # Save this dataset's results (overwrites if exists)
+        if dataset_results:
+            ds_df = pd.DataFrame(dataset_results)
+            ds_df.to_csv(results_dir / f"{ds_name}.csv", index=False)
     
     elapsed_total = time.time() - start_time
     
-    # --- Create results DataFrame ---
-    results_df = pd.DataFrame(all_results)
+    # --- Load all results from results/ folder ---
+    all_csvs = list(results_dir.glob("*.csv"))
+    results_df = pd.concat([pd.read_csv(f) for f in all_csvs], ignore_index=True)
     
     print()
     print("=" * 70)
     print("  EXPERIMENT SUMMARY")
     print("=" * 70)
+    print(f"Datasets processed: {len(all_csvs)}")
     print(f"Total results collected: {len(results_df)}")
     print(f"Total runtime: {elapsed_total:.1f}s ({elapsed_total/60:.1f} min)")
-    print(f"Experiments per second: {len(results_df)/elapsed_total:.1f}")
+    print(f"Results saved to: results/*.csv")
     print()
-    
-    # --- Save raw results ---
-    raw_output = f"{OUTPUT_PREFIX}_raw.csv"
-    results_df.to_csv(raw_output, index=False)
-    print(f"✓ Saved raw results to: {raw_output}")
     
     # --- Compute aggregated statistics ---
     metrics = ['recall', 'precision', 'igd', 'hv_diff']
@@ -619,10 +612,6 @@ def main():
     stats_df.columns = ['_'.join(col).strip('_') for col in stats_df.columns]
     stats_df = stats_df.reset_index()
     
-    agg_output = f"{OUTPUT_PREFIX}_stats.csv"
-    stats_df.to_csv(agg_output, index=False)
-    print(f"✓ Saved aggregated stats to: {agg_output}")
-    
     # --- Compute overall summary (averaged across datasets) ---
     overall_summary = results_df.groupby(['method', 'sample_size']).agg({
         'recall': ['mean', 'median', 'std'],
@@ -632,10 +621,6 @@ def main():
     }).round(4)
     overall_summary.columns = ['_'.join(col) for col in overall_summary.columns]
     overall_summary = overall_summary.reset_index()
-    
-    summary_output = f"{OUTPUT_PREFIX}_summary.csv"
-    overall_summary.to_csv(summary_output, index=False)
-    print(f"✓ Saved overall summary to: {summary_output}")
     
     # --- Compute WIN COUNTS per dataset (more robust than mean) ---
     print()

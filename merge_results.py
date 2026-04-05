@@ -1,12 +1,20 @@
 #!/usr/bin/env python3
-"""Merge and analyze experiment results."""
+"""Merge and analyze experiment results from results/ folder."""
 
 import pandas as pd
+from pathlib import Path
 from collections import defaultdict
 
-# Load merged data
-df = pd.read_csv('all_experiments_raw.csv')
-print(f"Loaded {len(df)} rows from {df['dataset'].nunique()} datasets")
+# Load all CSVs from results/ folder
+results_dir = Path("results")
+csv_files = list(results_dir.glob("*.csv"))
+
+if not csv_files:
+    print("No CSV files found in results/ folder")
+    exit(1)
+
+df = pd.concat([pd.read_csv(f) for f in csv_files], ignore_index=True)
+print(f"Loaded {len(df)} rows from {len(csv_files)} files")
 print(f"Datasets: {sorted(df['dataset'].unique())}")
 
 # Aggregated stats per (dataset, method, sample_size)
@@ -22,8 +30,6 @@ agg_funcs['true_pf_size'] = 'first'
 stats_df = df.groupby(group_cols).agg(agg_funcs).round(4)
 stats_df.columns = ['_'.join(col).strip('_') for col in stats_df.columns]
 stats_df = stats_df.reset_index()
-stats_df.to_csv('all_experiments_stats.csv', index=False)
-print(f"✓ Saved: all_experiments_stats.csv ({len(stats_df)} rows)")
 
 # Overall summary
 overall = df.groupby(['method', 'sample_size']).agg({
@@ -34,8 +40,6 @@ overall = df.groupby(['method', 'sample_size']).agg({
 }).round(4)
 overall.columns = ['_'.join(col) for col in overall.columns]
 overall = overall.reset_index()
-overall.to_csv('all_experiments_summary.csv', index=False)
-print(f"✓ Saved: all_experiments_summary.csv ({len(overall)} rows)")
 
 # WIN COUNTS
 FIXED_SAMPLE_SIZES = [50, 100, 200, 250]
