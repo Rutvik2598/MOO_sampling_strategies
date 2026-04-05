@@ -1,0 +1,14 @@
+rank,title,year,citations,venue,authors,tags
+1,Revisiting the Impact of Classification Techniques on Performance of Defect Prediction Models,2015,416,ICSE,"Ghotra, McIntosh, Hassan",SE
+2,Automated Parameter Optimization of Classification Techniques for Defect Prediction,2016,349,ICSE,"Tantithamthavorn, McIntosh, Hassan, Matsumoto",config|SE
+3,Tuning for Software Analytics: Is It Really Necessary?,2016,217,IST,"Fu, Menzies, Shen",config|SE
+4,DeepPerf: Performance Prediction for Configurable Software with Deep Sparse Neural Network,2019,201,ICSE,"Ha, Zhang",config|surrogate
+5,Combining Multi-Objective Search and Constraint Solving for Configuring Large SPLs,2015,199,ICSE,"Henard, Papadakis, Harman, Le Traon",SBSE|MOO|config
+6,Using Bad Learners to Find Good Configurations,2017,141,FSE,"Nair, Menzies, Siegmund, Apel",config|surrogate|sampling
+7,An adaptive Bayesian approach to surrogate-assisted evolutionary multi-objective optimization,2020,136,Information Sciences,Wang et al.,surrogate|MOO|Bayesian
+8,Surrogate-assisted particle swarm optimization with Pareto active learning for expensive MOO,2019,133,IEEE/CAA J. Automatica Sinica,Luo et al.,surrogate|MOO|active-learning
+9,Data-efficient Performance Learning for Configurable Systems,2018,125,EMSE,"Guo, Dingyu, Siegmund, Apel et al.",config|surrogate|sampling
+10,A Practical Guide to Select Quality Indicators for Assessing Pareto-Based Search Algorithms in SBSE,2016,117,ICSE,"Wang, Harman, Jia, Krinke",SBSE|MOO|metrics
+11,Search-based software library recommendation using multi-objective optimization,2017,100,IST,"Ouni, Kula, Inoue",SBSE|MOO
+12,Learning to Sample: Exploiting Similarities Across Environments to Learn Performance Models,2018,89,FSE,"Jamshidi, Velez, Kastner, Siegmund",config|sampling|transfer
+13,"""Sampling"" as a Baseline Optimizer for Search-Based Software Engineering",2019,70,IEEE TSE,"Chen, Nair, Krishna, Menzies",SBSE|sampling|MOO

@@ -1,0 +1,822 @@
+[
+  {
+    "paperId": "0e17ab6c9d31a481c641f2b1760e09ea51ab76cc",
+    "title": "The Oracle Problem in Software Testing: A Survey",
+    "year": 2015,
+    "citations": 1040,
+    "venue": "IEEE Transactions on Software Engineering",
+    "authors": "Earl T. Barr, M. Harman, Phil McMinn et al.",
+    "has_pdf": true,
+    "rank": 1
+  },
+  {
+    "paperId": "bcdc23c039c2bdeb74792a7cb752a28ad17e25a4",
+    "title": "Using bad learners to find good configurations",
+    "year": 2017,
+    "citations": 141,
+    "venue": "ESEC/SIGSOFT FSE",
+    "authors": "V. Nair, T. Menzies, Norbert Siegmund et al.",
+    "has_pdf": true,
+    "rank": 2
+  },
+  {
+    "paperId": "9eb6bde06c8f943afa3244a9529d5102cb87d456",
+    "title": "Finding Faster Configurations Using FLASH",
+    "year": 2018,
+    "citations": 138,
+    "venue": "IEEE Transactions on Software Engineering",
+    "authors": "V. Nair, Zhe Yu, T. Menzies et al.",
+    "has_pdf": true,
+    "rank": 3
+  },
+  {
+    "paperId": "2088c5b021f0f62f06e33f8b428a9123c3a8abfb",
+    "title": "Handling Class-Imbalance with KNN (Neighbourhood) Under-Sampling for Software Defect Prediction",
+    "year": 2021,
+    "citations": 122,
+    "venue": "Artificial Intelligence Review",
+    "authors": "Somya Goyal",
+    "has_pdf": false,
+    "rank": 4
+  },
+  {
+    "paperId": "4c75c109e9abadd5498f5ae92fe3a1738a05f23b",
+    "title": "A Practical Guide to Select Quality Indicators for Assessing Pareto-Based Search Algorithms in Search-Based Software Engineering",
+    "year": 2016,
+    "citations": 117,
+    "venue": "International Conference on Software Engineering",
+    "authors": "Shuai Wang, Shaukat Ali, T. Yue et al.",
+    "has_pdf": true,
+    "rank": 5
+  },
+  {
+    "paperId": "3587d2d031e53a5455d9bc6f023aece5c6a61f64",
+    "title": "How to Evaluate Solutions in Pareto-Based Search-Based Software Engineering: A Critical Review and Methodological Guidance",
+    "year": 2020,
+    "citations": 98,
+    "venue": "IEEE Transactions on Software Engineering",
+    "authors": "Tao Chen, M. Li, Xin Yao",
+    "has_pdf": false,
+    "rank": 6
+  },
+  {
+    "paperId": "8e598e31568b88ce222be09e65e3564b1d55321b",
+    "title": "Learning to sample: exploiting similarities across environments to learn performance models for configurable systems",
+    "year": 2018,
+    "citations": 89,
+    "venue": "ESEC/SIGSOFT FSE",
+    "authors": "Pooyan Jamshidi, Miguel Velez, Christian Kästner et al.",
+    "has_pdf": true,
+    "rank": 7
+  },
+  {
+    "paperId": "ce4d653a8aa1eefd7953a37a7a3691a18fc3a8d1",
+    "title": "A survey of many-objective optimisation in search-based software engineering",
+    "year": 2019,
+    "citations": 89,
+    "venue": "Journal of Systems and Software",
+    "authors": "A. Ramírez, J. Romero, Sebastián Ventura",
+    "has_pdf": false,
+    "rank": 8
+  },
+  {
+    "paperId": "7bc66121b85df0788061f35ee2f0b67a54b2e55a",
+    "title": "“Sampling” as a Baseline Optimizer for Search-Based Software Engineering",
+    "year": 2016,
+    "citations": 70,
+    "venue": "IEEE Transactions on Software Engineering",
+    "authors": "Jianfeng Chen, V. Nair, R. Krishna et al.",
+    "has_pdf": true,
+    "rank": 9
+  },
+  {
+    "paperId": "64c060de8b5b4128cca1636d3770e578c5007f74",
+    "title": "Faster discovery of faster system configurations with spectral learning",
+    "year": 2017,
+    "citations": 70,
+    "venue": "International Conference on Automated Software Engineering",
+    "authors": "V. Nair, T. Menzies, Norbert Siegmund et al.",
+    "has_pdf": true,
+    "rank": 10
+  },
+  {
+    "paperId": "9bb0d290e311fd7b545622e7e61bef15b26c3c8b",
+    "title": "A holistic review on artificial intelligence techniques for well placement optimization problem",
+    "year": 2020,
+    "citations": 69,
+    "venue": "Advances in Engineering Software",
+    "authors": "Jahedul Islam, P. Vasant, B. Negash et al.",
+    "has_pdf": true,
+    "rank": 11
+  },
+  {
+    "paperId": "68c04c8b2af2ea2b406fc6065fa2b854fb5cc3e4",
+    "title": "Practitioners' Expectations on Automated Code Comment Generation",
+    "year": 2022,
+    "citations": 66,
+    "venue": "International Conference on Software Engineering",
+    "authors": "Xing Hu, Xin Xia, D. Lo et al.",
+    "has_pdf": true,
+    "rank": 12
+  },
+  {
+    "paperId": "efed8bf738744bd802e901725ccf401ae3a1ba18",
+    "title": "The Interplay of Sampling and Machine Learning for Software Performance Prediction",
+    "year": 2020,
+    "citations": 57,
+    "venue": "IEEE Software",
+    "authors": "Christian Kaltenecker, A. Grebhahn, Norbert Siegmund et al.",
+    "has_pdf": false,
+    "rank": 13
+  },
+  {
+    "paperId": "bc4cd3ba7f0ec1d22de1ad94cea41ebccefb0a61",
+    "title": "Uniform Random Sampling Product Configurations of Feature Models That Have Numerical Features",
+    "year": 2019,
+    "citations": 57,
+    "venue": "Software Product Lines Conference",
+    "authors": "Daniel-Jesus Munoz, Jeho Oh, M. Pinto et al.",
+    "has_pdf": false,
+    "rank": 14
+  },
+  {
+    "paperId": "7f6e074341b92e88a45683ea9292a9385397d92c",
+    "title": "Effective software defect prediction using support vector machines (SVMs)",
+    "year": 2021,
+    "citations": 45,
+    "venue": "International Journal of System Assurance Engineering and Management",
+    "authors": "Somya Goyal",
+    "has_pdf": false,
+    "rank": 15
+  },
+  {
+    "paperId": "18654758c81428807a62f6cf505e383dc1607b2d",
+    "title": "Predicting continuous integration build failures using evolutionary search",
+    "year": 2020,
+    "citations": 44,
+    "venue": "Information and Software Technology",
+    "authors": "Islem Saidani, Ali Ouni, Moataz Chouchen et al.",
+    "has_pdf": false,
+    "rank": 16
+  },
+  {
+    "paperId": "e94d40478e7d211975a6484b08752853c5c17f21",
+    "title": "How Far Have We Progressed in Identifying Self-admitted Technical Debts? A Comprehensive Empirical Study",
+    "year": 2021,
+    "citations": 43,
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "authors": "Zhaoqiang Guo, Shiran Liu, Jinping Liu et al.",
+    "has_pdf": false,
+    "rank": 17
+  },
+  {
+    "paperId": "abcad78d2dba846e7c02ab853f86fbb258ad9952",
+    "title": "An Active Learning Approach for Improving the Accuracy of Automated Domain Model Extraction",
+    "year": 2019,
+    "citations": 39,
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "authors": "Chetan Arora, M. Sabetzadeh, S. Nejati et al.",
+    "has_pdf": false,
+    "rank": 18
+  },
+  {
+    "paperId": "11acd89b85610c6d5f86d00f235fbdc9c95fe2ac",
+    "title": "Whence to Learn? Transferring Knowledge in Configurable Systems Using BEETLE",
+    "year": 2019,
+    "citations": 35,
+    "venue": "IEEE Transactions on Software Engineering",
+    "authors": "R. Krishna, V. Nair, Pooyan Jamshidi et al.",
+    "has_pdf": false,
+    "rank": 19
+  },
+  {
+    "paperId": "ff6df9d009ecc6bb4c648a258b3437fa9dacc15c",
+    "title": "TSI: Time series to imaging based model for detecting anomalous energy consumption in smart buildings",
+    "year": 2020,
+    "citations": 31,
+    "venue": "Information Sciences",
+    "authors": "Muhammad Fahim, Khadija Fraz, A. Sillitti",
+    "has_pdf": true,
+    "rank": 20
+  },
+  {
+    "paperId": "593489562b864de1470015d5cc89297a8c675a3d",
+    "title": "Robust admissibility and stabilization of uncertain singular fractional-order linear time-invariant systems",
+    "year": 2019,
+    "citations": 29,
+    "venue": "IEEE/CAA Journal of Automatica Sinica",
+    "authors": "Saliha Marir, M. Chadli",
+    "has_pdf": true,
+    "rank": 21
+  },
+  {
+    "paperId": "e3e9b486dd402589043dbe577b36ac18e598bf16",
+    "title": "Predicting the Defects using Stacked Ensemble Learner with Filtered Dataset",
+    "year": 2021,
+    "citations": 20,
+    "venue": "International Conference on Automated Software Engineering",
+    "authors": "Somya Goyal",
+    "has_pdf": false,
+    "rank": 22
+  },
+  {
+    "paperId": "296061d75e42f401e4b51416dbf9a51d7ad5b3a6",
+    "title": "The contribution that empirical studies performed in industry make to the findings of systematic reviews: A tertiary study",
+    "year": 2018,
+    "citations": 19,
+    "venue": "Information and Software Technology",
+    "authors": "D. Budgen, P. Brereton, N. Williams et al.",
+    "has_pdf": true,
+    "rank": 23
+  },
+  {
+    "paperId": "2ca55fb4bbb1fd7785434c121d994a42ec008108",
+    "title": "Identifying Solidity Smart Contract API Documentation Errors",
+    "year": 2022,
+    "citations": 19,
+    "venue": "International Conference on Automated Software Engineering",
+    "authors": "Chenguang Zhu",
+    "has_pdf": true,
+    "rank": 24
+  },
+  {
+    "paperId": "e8c4ceac31b1296d6d9e212952a18cf9600f3c27",
+    "title": "GenCoG: A DSL-Based Approach to Generating Computation Graphs for TVM Testing",
+    "year": 2023,
+    "citations": 18,
+    "venue": "International Symposium on Software Testing and Analysis",
+    "authors": "Zihan Wang, Pengbo Nie, Xinyuan Miao et al.",
+    "has_pdf": true,
+    "rank": 25
+  },
+  {
+    "paperId": "8a82b322d2a5c64ce908f59bca088124df4dcfa0",
+    "title": "Low-Overhead Deadlock Prediction",
+    "year": 2020,
+    "citations": 14,
+    "venue": "International Conference on Software Engineering",
+    "authors": "Yan Cai, Ruijie Meng, J. Palsberg",
+    "has_pdf": true,
+    "rank": 26
+  },
+  {
+    "paperId": "6b9c390d06d63fd26ee301390b3cec9bfad4bee7",
+    "title": "MAT: A simple yet strong baseline for identifying self-admitted technical debt",
+    "year": 2019,
+    "citations": 14,
+    "venue": "arXiv.org",
+    "authors": "Zhaoqiang Guo, Shiran Liu, Jinping Liu et al.",
+    "has_pdf": false,
+    "rank": 27
+  },
+  {
+    "paperId": "2c4c6d2780eaab71979eeb68442c683e790a4cc7",
+    "title": "Using mutation to design tests for aspect-oriented models",
+    "year": 2017,
+    "citations": 13,
+    "venue": "Information and Software Technology",
+    "authors": "B. Lindström, Jeff Offutt, Daniel Sundmark et al.",
+    "has_pdf": true,
+    "rank": 28
+  },
+  {
+    "paperId": "f479f16bc3ebabb970962ba1a641e4c58a87e175",
+    "title": "Learning from Very Little Data: On the Value of Landscape Analysis for Predicting Software Project Health",
+    "year": 2023,
+    "citations": 12,
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "authors": "Andre Lustosa, T. Menzies",
+    "has_pdf": false,
+    "rank": 29
+  },
+  {
+    "paperId": "1e8c74e790a8ca5fc2dc1a9d4c253faaf02f399a",
+    "title": "Going deeper with optimal software products selection using many-objective optimization and satisfiability solvers",
+    "year": 2019,
+    "citations": 12,
+    "venue": "Empirical Software Engineering",
+    "authors": "Yi Xiang, Xiaowei Yang, Yuren Zhou et al.",
+    "has_pdf": false,
+    "rank": 30
+  },
+  {
+    "paperId": "e2119bd1782a674a86028507217142fceac5e08c",
+    "title": "Green Fuzzing: A Saturation-Based Stopping Criterion using Vulnerability Prediction",
+    "year": 2023,
+    "citations": 11,
+    "venue": "International Symposium on Software Testing and Analysis",
+    "authors": "Stephan Lipp, Daniel Elsner, Severin Kacianka et al.",
+    "has_pdf": true,
+    "rank": 31
+  },
+  {
+    "paperId": "532df60c535ce82a9d4dd5365fb0f5f4a3fa3948",
+    "title": "More Signal, Less Noise: The Electronic Residency Application Program Supplemental Application in Radiology Match.",
+    "year": 2022,
+    "citations": 10,
+    "venue": "Journal of the American College of Radiology",
+    "authors": "A. Rozenshtein, B. Griffith, Angelisa M. Paladin",
+    "has_pdf": true,
+    "rank": 32
+  },
+  {
+    "paperId": "7f97d6662b5347b0eeb2821a9e676fe9e84fc1a6",
+    "title": "Alleviating Class Imbalance Issue in Software Fault Prediction Using DBSCAN-Based Induced Graph Under-Sampling Method",
+    "year": 2024,
+    "citations": 9,
+    "venue": "The Arabian journal for science and engineering",
+    "authors": "K. Bhandari, Kuldeep Kumar, A. L. Sangal",
+    "has_pdf": false,
+    "rank": 33
+  },
+  {
+    "paperId": "c147ffa9a742ddb6649822dd06d610af60692ec2",
+    "title": "Code-line-level Bugginess Identification: How Far have We Come, and How Far have We Yet to Go?",
+    "year": 2023,
+    "citations": 9,
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "authors": "Zhaoqiang Guo, Shiran Liu, Xutong Liu et al.",
+    "has_pdf": false,
+    "rank": 34
+  },
+  {
+    "paperId": "550835b17623ca5f8647c5889917538ba881639a",
+    "title": "Risks and assets: a qualitative study of a software ecosystem in the mining industry",
+    "year": 2019,
+    "citations": 8,
+    "venue": "ESEC/SIGSOFT FSE",
+    "authors": "Thomas Olsson, U. Franke",
+    "has_pdf": true,
+    "rank": 35
+  },
+  {
+    "paperId": "8e40aacb22c47e98abdc67d060d8572f656ccc80",
+    "title": "PromiseTune: Unveiling Causally Promising and Explainable Configuration Tuning",
+    "year": 2025,
+    "citations": 8,
+    "venue": "arXiv.org",
+    "authors": "Peng Chen, Tao Chen",
+    "has_pdf": false,
+    "rank": 36
+  },
+  {
+    "paperId": "04198537079f2937dbe3de24287619ebe8419b7e",
+    "title": "Search-based Diverse Sampling from Real-world Software Product Lines",
+    "year": 2022,
+    "citations": 8,
+    "venue": "International Conference on Software Engineering",
+    "authors": "Yi Xiang, Han Huang, Yuren Zhou et al.",
+    "has_pdf": false,
+    "rank": 37
+  },
+  {
+    "paperId": "9cd33bb9b6d3f0561371b97bf6a1e17e7db96175",
+    "title": "Automated patch extraction via syntax- and semantics-aware Delta debugging on source code changes",
+    "year": 2018,
+    "citations": 7,
+    "venue": "ESEC/SIGSOFT FSE",
+    "authors": "M. Hashimoto, A. Mori, T. Izumida",
+    "has_pdf": true,
+    "rank": 38
+  },
+  {
+    "paperId": "a59b7a0761301024714e67054f35dcaa34d31cf7",
+    "title": "Neural-network-based carrier-less amplitude phase modulated signal generation and end-to-end optimization for fiber-terahertz integrated communication system.",
+    "year": 2024,
+    "citations": 7,
+    "venue": "Optics Express",
+    "authors": "Changle Huang, Li Tao, Zhongya Li et al.",
+    "has_pdf": true,
+    "rank": 39
+  },
+  {
+    "paperId": "9efbb55db48ee4d961764257e71128585ba61a6b",
+    "title": "Can Large Language Models Improve SE Active Learning via Warm-Starts?",
+    "year": 2024,
+    "citations": 7,
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "authors": "Lohith Senthilkumar, Tim Menzies",
+    "has_pdf": false,
+    "rank": 40
+  },
+  {
+    "paperId": "51e7f44713f364c70ae8a5594723dba8641647df",
+    "title": "VEER: enhancing the interpretability of model-based optimizations",
+    "year": 2021,
+    "citations": 7,
+    "venue": "Empirical Software Engineering",
+    "authors": "Kewen Peng, Christian Kaltenecker, Norbert Siegmund et al.",
+    "has_pdf": false,
+    "rank": 41
+  },
+  {
+    "paperId": "7cb81d26dd3913128db2cdbf1d86075f37ff5cde",
+    "title": "Enhancing Function Name Prediction using Votes-Based Name Tokenization and Multi-task Learning",
+    "year": 2024,
+    "citations": 6,
+    "venue": "Proc. ACM Softw. Eng.",
+    "authors": "Xiaoling Zhang, Zhengzi Xu, Shouguo Yang et al.",
+    "has_pdf": true,
+    "rank": 42
+  },
+  {
+    "paperId": "f6f418f97cf6bd2d1efd64e530cc374e3c0d0b60",
+    "title": "Modelling, analysis and optimization of design parameter of bump-type gas foil journal bearing",
+    "year": 2022,
+    "citations": 6,
+    "venue": "Engineering Research Express",
+    "authors": "V. Mourya, S. Bhore",
+    "has_pdf": true,
+    "rank": 43
+  },
+  {
+    "paperId": "5b7388c25e3736a040aa18dd1e1c3b6e8c74fbbe",
+    "title": "Signal-to-Interference-Plus-Noise Ratio Based Optimization for Sound Zone Control",
+    "year": 2023,
+    "citations": 6,
+    "venue": "IEEE Open Journal of Signal Processing",
+    "authors": "Jesper Brunnström, Toon van Waterschoot, M. Moonen",
+    "has_pdf": true,
+    "rank": 44
+  },
+  {
+    "paperId": "a50cbe95412e532f6b9d651699bda6dceabbe2b2",
+    "title": "DBOS_US: a density-based graph under-sampling method to handle class imbalance and class overlap issues in software fault prediction",
+    "year": 2024,
+    "citations": 6,
+    "venue": "Journal of Supercomputing",
+    "authors": "K. Bhandari, Kuldeep Kumar, A. L. Sangal",
+    "has_pdf": false,
+    "rank": 45
+  },
+  {
+    "paperId": "8670aafdbbae208401d8fcd3d8646ad2c6a53b31",
+    "title": "Sampling configurations from software product lines via probability-aware diversification and SAT solving",
+    "year": 2022,
+    "citations": 6,
+    "venue": "International Conference on Automated Software Engineering",
+    "authors": "Yang Xiang, Xiaowei Yang, Han Huang et al.",
+    "has_pdf": false,
+    "rank": 46
+  },
+  {
+    "paperId": "e54c69a560db14165655d9a84492573ad73a3fd7",
+    "title": "Predicting the Defects using Stacked Ensemble Learner with Filtered Dataset",
+    "year": 2021,
+    "citations": 6,
+    "venue": "International Conference on Automated Software Engineering",
+    "authors": "Somya Goyal",
+    "has_pdf": false,
+    "rank": 47
+  },
+  {
+    "paperId": "4104f1b6c054ec314716e2166bff883532855c2a",
+    "title": "Data‐driven benchmarking in software development effort estimation: The few define the bulk",
+    "year": 2020,
+    "citations": 6,
+    "venue": "J. Softw. Evol. Process.",
+    "authors": "N. Mittas, L. Angelis",
+    "has_pdf": false,
+    "rank": 48
+  },
+  {
+    "paperId": "52a69a2a2c80becc2b182948c66fef830d747d86",
+    "title": "Multi-objective optimization of the hybrid photovoltaic-battery-diesel-desalination system based on multi-type of desalination unit",
+    "year": 2024,
+    "citations": 5,
+    "venue": "Environmental science and pollution research international",
+    "authors": "Akbar Maleki, Zahra Eskandarfilabi, S. M. Mahmoudi et al.",
+    "has_pdf": true,
+    "rank": 49
+  },
+  {
+    "paperId": "3cf52050d84671170f7c76b1c4ca63ffdd5766df",
+    "title": "Don’t Lie to Me: Avoiding Malicious Explanations With STEALTH",
+    "year": 2023,
+    "citations": 5,
+    "venue": "IEEE Software",
+    "authors": "Lauren Alvarez, Tim Menzies",
+    "has_pdf": false,
+    "rank": 50
+  },
+  {
+    "paperId": "a6f7cfec0d0c1de71dd5f74720f43835c566dab8",
+    "title": "MoMIT: Porting a JavaScript Interpreter on a Quarter Coin",
+    "year": 2019,
+    "citations": 5,
+    "venue": "IEEE Transactions on Software Engineering",
+    "authors": "Rodrigo Morales, Rubén Saborido, Yann-Gaël Guéhéneuc",
+    "has_pdf": false,
+    "rank": 51
+  },
+  {
+    "paperId": "890b23c5de338a621155e7a46523b581ff810221",
+    "title": "MOOT: a Repository of Many Multi-Objective Optimization Tasks",
+    "year": 2025,
+    "citations": 4,
+    "venue": "arXiv.org",
+    "authors": "Tim Menzies, Tao Chen, Yulong Ye et al.",
+    "has_pdf": true,
+    "rank": 52
+  },
+  {
+    "paperId": "9ec880142279a2f116b2e9f708ef73b3f2b310f2",
+    "title": "Less Noise, More Signal: DRR for Better Optimizations of SE Tasks",
+    "year": 2025,
+    "citations": 4,
+    "venue": "arXiv.org",
+    "authors": "Andre Lustosa, Tim Menzies",
+    "has_pdf": true,
+    "rank": 53
+  },
+  {
+    "paperId": "6fb43fdf2c6709b987693727aceaf33a8c53260d",
+    "title": "iSNEAK: Partial Ordering as Heuristics for Model- Based Reasoning in Software Engineering",
+    "year": 2023,
+    "citations": 4,
+    "venue": "IEEE Access",
+    "authors": "Andre Lustosa, Tim Menzies",
+    "has_pdf": false,
+    "rank": 54
+  },
+  {
+    "paperId": "70989a72377d67ef093023c627ce586b06203142",
+    "title": "BINGO! Simple Optimizers Win Big if Problems Collapse to a Few Buckets",
+    "year": 2025,
+    "citations": 3,
+    "venue": "arXiv.org",
+    "authors": "Kishan Kumar Ganguly, Tim Menzies",
+    "has_pdf": false,
+    "rank": 55
+  },
+  {
+    "paperId": "8caf4ec989af9255c7cdaf62211fd64535cb268d",
+    "title": "Retrospective: Data Mining Static Code Attributes to Learn Defect Predictors",
+    "year": 2025,
+    "citations": 2,
+    "venue": "IEEE Transactions on Software Engineering",
+    "authors": "Tim Menzies",
+    "has_pdf": false,
+    "rank": 56
+  },
+  {
+    "paperId": "7c6b3a48571f01bd9ebb6d7c6d2381dc7cd43468",
+    "title": "Preference Discovery in Large Product Lines",
+    "year": 2021,
+    "citations": 2,
+    "venue": "arXiv.org",
+    "authors": "Andre Lustosa, T. Menzies",
+    "has_pdf": false,
+    "rank": 57
+  },
+  {
+    "paperId": "22ea5e9feceffbf0475073cc5b0118f47e485e4d",
+    "title": "A systematic literature review of the SBSE research community in Spain",
+    "year": 2020,
+    "citations": 2,
+    "venue": "Progress in Artificial Intelligence",
+    "authors": "A. Ramírez, Pedro Delgado-Pérez, Javier Ferrer et al.",
+    "has_pdf": false,
+    "rank": 58
+  },
+  {
+    "paperId": "459d879d74bbcd9704b9e98340cb3b44f717ffb5",
+    "title": "Building Very Small Test Suites (with Snap).",
+    "year": 2019,
+    "citations": 2,
+    "venue": "",
+    "authors": "Jianfeng Chen, Xipeng Shen, T. Menzies",
+    "has_pdf": false,
+    "rank": 59
+  },
+  {
+    "paperId": "11b634c227206e7edb5af4e7a4c43dec70c32588",
+    "title": "Optimization of preparation parameters of palm oil-based nanofuel with multi wall carbon nanotube (MWCNT) for stability using Taguchi-grey relation analysis (GRA) combination",
+    "year": 2024,
+    "citations": 1,
+    "venue": "Mechanical Engineering for Society and Industry",
+    "authors": "I. M. Nauri, Andoko Andoko, Riduwan Prasetya et al.",
+    "has_pdf": true,
+    "rank": 60
+  },
+  {
+    "paperId": "c8d54871ad13c2140ddf47fab903c360f1c07351",
+    "title": "The prediction and optimization of ROP based on MLP-PSO",
+    "year": 2023,
+    "citations": 1,
+    "venue": "International Conference on the Software Process",
+    "authors": "Jia Wu, Chao Guo",
+    "has_pdf": true,
+    "rank": 61
+  },
+  {
+    "paperId": "8f12f8b90eb5291358953e7f10e5e337c5f7dfff",
+    "title": "Improving Voyage Efficiency in the Shipping 4.0 Decarbonization Era",
+    "year": 2023,
+    "citations": 1,
+    "venue": "International Symposium on Service Oriented Software Engineering",
+    "authors": "T. Varelas, Dimitrios Kaklis, Iraklis Varlamis et al.",
+    "has_pdf": true,
+    "rank": 62
+  },
+  {
+    "paperId": "a72b80b74a4e64b5814a9b496faf6b5699dc1834",
+    "title": "More Signal, Less Noise: Targeted Content Marketing with Sinus-Milieus",
+    "year": 2020,
+    "citations": 1,
+    "venue": "",
+    "authors": "James Edwards, Marc Calmbach",
+    "has_pdf": true,
+    "rank": 63
+  },
+  {
+    "paperId": "88726bff30e44ebc6c3fb2e17779a5858a57a7b2",
+    "title": "Beta distribution-based monogamous pairs genetic algorithm for knowledge transfer in many-task optimization",
+    "year": 2025,
+    "citations": 1,
+    "venue": "Knowledge-Based Systems",
+    "authors": "Ting Yee Lim, Choo Jun Tan, Yi Wen Kerk et al.",
+    "has_pdf": false,
+    "rank": 64
+  },
+  {
+    "paperId": "8440ccee19e2c8291f167292f42d4e2f6b64458d",
+    "title": "Model Review: A PROMISEing Opportunity",
+    "year": 2023,
+    "citations": 1,
+    "venue": "International Conference on Predictive Models in Software Engineering",
+    "authors": "Tim Menzies",
+    "has_pdf": false,
+    "rank": 65
+  },
+  {
+    "paperId": "180253d4872bb951dcd23dd6c662ba0dd6d840bf",
+    "title": "On the Benefits of Semi-Supervised Test Case Generation for Simulation Models",
+    "year": 2023,
+    "citations": 1,
+    "venue": "",
+    "authors": "Xiao Ling, Tim Menzies",
+    "has_pdf": false,
+    "rank": 66
+  },
+  {
+    "paperId": "0a462bb28b03e2b37f2ddc32fd7ce0b69fff27c5",
+    "title": "A Tale of Two Cities: Data and Configuration Variances in Robust Deep Learning",
+    "year": 2022,
+    "citations": 1,
+    "venue": "arXiv.org",
+    "authors": "Guanqin Zhang, Jiankun Sun, Feng Xu et al.",
+    "has_pdf": false,
+    "rank": 67
+  },
+  {
+    "paperId": "684735446b2d9cd1bd08ca149a7ebc7c39ba4e19",
+    "title": "SNEAK: Faster Interactive Search-based SE",
+    "year": 2021,
+    "citations": 1,
+    "venue": "",
+    "authors": "Andre Lustosa, Jaydeep M. Patel, Venkata Sai Teja Malapati et al.",
+    "has_pdf": false,
+    "rank": 68
+  },
+  {
+    "paperId": "b4932ff30bb615cce993f92784966e693ab650b8",
+    "title": "Fairer Software Made Easier (using “Keys”)",
+    "year": 2021,
+    "citations": 1,
+    "venue": "2021 36th IEEE/ACM International Conference on Automated Software Engineering Workshops (ASEW)",
+    "authors": "T. Menzies, Kewen Peng, Andre Lustosa",
+    "has_pdf": false,
+    "rank": 69
+  },
+  {
+    "paperId": "e50207e5ddb04a0f152d72a7be03766a5eee6788",
+    "title": "Faster SAT Solving for Software with Repeated Structures (with Case Studies on Software Test Suite Minimization)",
+    "year": 2021,
+    "citations": 1,
+    "venue": "arXiv.org",
+    "authors": "Jianfeng Chen, Xipeng Shen, T. Menzies",
+    "has_pdf": false,
+    "rank": 70
+  },
+  {
+    "paperId": "d6da86019c99888e9ccb6441eaafe2d3a204136b",
+    "title": "HornFuzz: Fuzzing CHC solvers",
+    "year": 2023,
+    "citations": 0,
+    "venue": "International Conference on Evaluation & Assessment in Software Engineering",
+    "authors": "Anzhela Sukhanova, Valentyn Sobol",
+    "has_pdf": true,
+    "rank": 71
+  },
+  {
+    "paperId": "13e2a4d73181db1578ecee06d44370b1472a87d9",
+    "title": "Exploring the potential of performance improvement of an enhanced solar-integrated power generation geothermal flash cycle system with sensible thermal energy storage: techno-economic evaluation and multi-objective optimization",
+    "year": 2025,
+    "citations": 0,
+    "venue": "Journal of Thermal Analysis and Calorimetry",
+    "authors": "Paniz Arashrad, Shayan Rabet, M. Yari et al.",
+    "has_pdf": true,
+    "rank": 72
+  },
+  {
+    "paperId": "2ad2cfcd1879eb2a1751adadb63aae77c4a32d44",
+    "title": "Multi-Objective Optimization of Distributed Generation Placement in Electric Bus Transit Systems Integrated with Flash Charging Station Using Enhanced Multi-Objective Grey Wolf Optimization Technique and Consensus-Based Decision Support",
+    "year": 2025,
+    "citations": 0,
+    "venue": "Energies",
+    "authors": "Y. Kongjeen, Pongsuk Pilalum, Saksit Deeum et al.",
+    "has_pdf": true,
+    "rank": 73
+  },
+  {
+    "paperId": "dba65fa3054236d3761faf43dfcaabc2eceded73",
+    "title": "Revealing Domain-Spatiality Patterns for Configuration Tuning: Domain Knowledge Meets Fitness Landscapes",
+    "year": 2026,
+    "citations": 0,
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "authors": "Yulong Ye, Hongyuan Liang, Chao Jiang et al.",
+    "has_pdf": false,
+    "rank": 74
+  },
+  {
+    "paperId": "aa74a48e5a5d63fe320a0f39e16ca95d370b5e34",
+    "title": "Can Causality Cure Confusion Caused By Correlation (in Software Analytics)?",
+    "year": 2026,
+    "citations": 0,
+    "venue": "",
+    "authors": "Amirali Rayegan, Tim Menzies",
+    "has_pdf": false,
+    "rank": 75
+  },
+  {
+    "paperId": "caa80a6075843de146a113944ae332ea31150418",
+    "title": "Beyond the Prompt: Assessing Domain Knowledge Strategies for High-Dimensional LLM Optimization in Software Engineering",
+    "year": 2026,
+    "citations": 0,
+    "venue": "arXiv.org",
+    "authors": "Srinath Srinivasan, Tim Menzies",
+    "has_pdf": false,
+    "rank": 76
+  },
+  {
+    "paperId": "092bb0d97c60221b31f6eac98ae73297c9425973",
+    "title": "How Low Can You Go? The Data-Light SE Challenge",
+    "year": 2025,
+    "citations": 0,
+    "venue": "arXiv.org",
+    "authors": "Kishan Kumar Ganguly, Tim Menzies",
+    "has_pdf": false,
+    "rank": 77
+  },
+  {
+    "paperId": "3bf1a90178189265e8966d5f9929f1c9917b1756",
+    "title": "Unveiling Many Faces of Surrogate Models for Configuration Tuning: A Fitness Landscape Analysis Perspective",
+    "year": 2025,
+    "citations": 0,
+    "venue": "arXiv.org",
+    "authors": "Peng Chen, Hongyuan Liang, Tao Chen",
+    "has_pdf": false,
+    "rank": 78
+  },
+  {
+    "paperId": "953bab9680cedeb7bb8094be689068aacbe280c2",
+    "title": "Efficiently Ranking Software Variants with Minimal Benchmarks",
+    "year": 2025,
+    "citations": 0,
+    "venue": "arXiv.org",
+    "authors": "Théo Matricon, M. Acher, Helge Spieker et al.",
+    "has_pdf": false,
+    "rank": 79
+  },
+  {
+    "paperId": "d85b3e704538b875bb33d6d79d2c68e935770cd8",
+    "title": "2019 Index IEEE Transactions on Software Engineering Vol. 45",
+    "year": 2020,
+    "citations": 0,
+    "venue": "IEEE Transactions on Software Engineering",
+    "authors": "",
+    "has_pdf": false,
+    "rank": 80
+  },
+  {
+    "paperId": "c3cd4c855a8661b72facca6a0f779fb4fe820ae5",
+    "title": "Multiobjective Optimization Using Evolutionary Algorithms in Agile Teams Allocation",
+    "year": 2019,
+    "citations": 0,
+    "venue": "Brazilian Symposium on Software Quality",
+    "authors": "Júnea Eliza Brandão Caldeira, S. R. I. Yoshioka, Bruno Rafael de Oliveira Rodrigues et al.",
+    "has_pdf": false,
+    "rank": 81
+  },
+  {
+    "paperId": "6fa40973264c08fd88156e7f848dc541b6f179eb",
+    "title": "Faster Creation of Smaller Test Suites (with SNAP)",
+    "year": 2019,
+    "citations": 0,
+    "venue": "arXiv.org",
+    "authors": "Jianfeng Chen, T. Menzies",
+    "has_pdf": false,
+    "rank": 82
+  }
+]

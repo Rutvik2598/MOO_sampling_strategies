@@ -1,0 +1,46 @@
+rank,title,year,citations,venue,authors,tags
+1,Revisiting the Impact of Classification Techniques on Performance of Defect Prediction Models,2015,416,ICSE,"Ghotra, McIntosh, Hassan",SE
+2,Automated Parameter Optimization of Classification Techniques for Defect Prediction,2016,349,ICSE,"Tantithamthavorn, McIntosh, Hassan, Matsumoto",config|SE
+3,Tuning for Software Analytics: Is It Really Necessary?,2016,217,IST,"Fu, Menzies, Shen",config|SE
+4,DeepPerf: Performance Prediction for Configurable Software with Deep Sparse Neural Network,2019,201,ICSE,"Ha, Zhang",config|surrogate
+5,Combining Multi-Objective Search and Constraint Solving for Configuring Large SPLs,2015,199,ICSE,"Henard, Papadakis, Harman, Le Traon",SBSE|MOO|config
+6,Using Bad Learners to Find Good Configurations,2017,141,FSE,"Nair, Menzies, Siegmund, Apel",config|surrogate|sampling
+7,An adaptive Bayesian approach to surrogate-assisted evolutionary multi-objective optimization,2020,136,Information Sciences,Wang et al.,surrogate|MOO|Bayesian
+8,Surrogate-assisted particle swarm optimization with Pareto active learning for expensive MOO,2019,133,IEEE/CAA J. Automatica Sinica,Luo et al.,surrogate|MOO|active-learning
+9,Data-efficient Performance Learning for Configurable Systems,2018,125,EMSE,"Guo, Dingyu, Siegmund, Apel et al.",config|surrogate|sampling
+10,A Practical Guide to Select Quality Indicators for Assessing Pareto-Based Search Algorithms in SBSE,2016,117,ICSE,"Wang, Harman, Jia, Krinke",SBSE|MOO|metrics
+11,Search-based software library recommendation using multi-objective optimization,2017,100,IST,"Ouni, Kula, Inoue",SBSE|MOO
+12,Learning to Sample: Exploiting Similarities Across Environments to Learn Performance Models,2018,89,FSE,"Jamshidi, Velez, Kastner, Siegmund",config|sampling|transfer
+13,"""Sampling"" as a Baseline Optimizer for Search-Based Software Engineering",2019,70,IEEE TSE,"Chen, Nair, Krishna, Menzies",SBSE|sampling|MOO
+14,Faster Discovery of Faster System Configurations with Spectral Learning,2018,70,ASE,"Nair, Menzies, Siegmund, Apel",config|surrogate|sampling
+15,Whence to Learn? Transferring Knowledge in Configurable Systems Using BEETLE,2020,58,IEEE TSE,"Krishna, Nair, Jamshidi, Menzies",config|transfer|sampling
+16,Adaptive Multi-Objective Evolutionary Algorithms for Overtime Planning in Software Projects,2017,49,IEEE TSE,"Sarro, Ferrucci, Harman",SBSE|MOO
+17,GALE: Geometric Active Learning for Search-Based Software Engineering,2015,43,IEEE TSE,"Krall, Menzies, Davies",SBSE|active-learning|MOO
+18,Batched Data-Driven Evolutionary Multi-Objective Optimization Based on Manifold Interpolation,2021,30,IEEE TEVC,"Li, Chen",surrogate|MOO|data-driven
+19,Beyond Evolutionary Algorithms for Search-based Software Engineering,2019,28,IST,"Chen, Nair, Menzies",SBSE|MOO
+20,Sequential Model Optimization for Software Effort Estimation,2022,25,IEEE TSE,"Xia, Shu, Shen, Menzies",active-learning|surrogate|SE
+21,Data-Driven Search-based Software Engineering,2018,24,MSR,"Nair, Agrawal, Chen, Fu, Mathew, Menzies et al.",SBSE|sampling|data-driven
+22,Analysing the Impact of Workloads on Modeling the Performance of Configurable Software,2023,18,ICSE,"Muhlbauer, Sattler, Kaltenecker et al.",config|surrogate
+23,Multi-objectivization of software module clustering using NSGA-III,2021,18,IST,Praditwong et al.,SBSE|MOO
+24,Twins or False Friends? Energy Consumption and Performance of Configurable Software,2023,16,ICSE,"Weber, Kaltenecker, Sattler, Apel, Siegmund",config
+25,VEER: Enhancing the Interpretability of Model-based Optimizations,2023,15,EMSE,"Peng, Kaltenecker, Siegmund, Apel, Menzies",config|MOO
+26,Adaptive Sampling of Pareto Frontiers with Binary Constraints Using Regression and Classification,2020,15,ICPR,"Heese, Bortz",surrogate|sampling|MOO
+27,Effectiveness assessment of an early testing technique using SBSE,2022,12,IST,Haq et al.,SBSE|MOO
+28,Transfer learning for search-based software engineering,2023,11,Auto. Software Engineering,Various,SBSE|transfer
+29,Accuracy Can Lie: On the Impact of Surrogate Model in Configuration Tuning,2025,10,IEEE TSE,"Chen, Gong, Chen",config|surrogate
+30,Dividable Configuration Performance Learning,2025,8,IEEE TSE,"Gong, Chen, Bahsoon",config|surrogate
+31,Learning from Very Little Data: Value of Landscape Analysis for Software Project Health,2024,8,TOSEM,"Lustosa, Menzies",sampling|SE|landscape
+32,A multi-objective hyper-heuristic for software module clustering,2021,8,JSS,Various,SBSE|MOO
+33,Predicting Configuration Performance in Multiple Environments with Sequential Meta-Learning,2024,6,FSE,"Gong, Chen",config|surrogate|transfer
+34,A clustering-based surrogate-assisted evolutionary algorithm (CSMOEA) for expensive MOO,2023,6,Soft Computing,Li et al.,surrogate|MOO|sampling
+35,iSNEAK: Partial Ordering as Heuristics for Model-Based Reasoning in SE,2024,3,IEEE Access,"Lustosa, Menzies",active-learning|MOO|SE
+36,FoMEMO: Towards Foundation Models for Expensive Multi-objective Optimization,2025,3,arXiv,"Yao, Liu, Zhao, Lin et al.",surrogate|MOO
+37,SPREAD: Sampling-based Pareto front Refinement via Efficient Adaptive Diffusion,2025,2,arXiv,"Hotegni, Peitz",sampling|MOO
+38,Pareto-Conditioned Diffusion Models for Offline Multi-Objective Optimization,2026,1,ICLR,Shrestha et al.,MOO|data-driven
+39,"Less Noise, More Signal: DRR for Better Optimizations of SE Tasks",2025,0,arXiv,"Lustosa, Menzies",sampling|MOO|SE
+40,BINGO! Simple Optimizers Win Big if Problems Collapse to a Few Buckets,2025,0,arXiv,"Ganguly, Menzies",MOO|SE|sampling
+41,"Minimal Data, Maximum Clarity: A Heuristic for Explaining Optimization",2025,0,arXiv,"Rayegan, Menzies",sampling|MOO|SE
+42,Can Large Language Models Improve SE Active Learning via Warm-Starts?,2024,0,arXiv,"Senthilkumar, Menzies",active-learning|SE
+43,Divide and Learn: Multi-Objective Combinatorial Optimization at Scale,2026,0,arXiv,Singh et al.,MOO|data-driven
+44,PromiseTune: Unveiling Causally Promising Configuration Tuning,2026,0,ICSE,"Chen, Chen",config|SE
+45,Dually Hierarchical Drift Adaptation for Online Configuration Performance Learning,2026,0,ICSE,"Xiang, Gong, Chen",config|SE|surrogate

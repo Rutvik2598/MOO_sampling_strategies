@@ -1,0 +1,1425 @@
+[
+  {
+    "paperId": "90051c41fbad90fc5054bfbfc7190e243a7de556",
+    "title": "Combining Multi-Objective Search and Constraint Solving for Configuring Large Software Product Lines",
+    "year": 2015,
+    "citations": 199,
+    "venue": "2015 IEEE/ACM 37th IEEE International Conference on Software Engineering",
+    "authors": "Christopher Henard, Mike Papadakis, M. Harman et al.",
+    "has_pdf": true,
+    "rank": 1
+  },
+  {
+    "paperId": "00e2ff5cb49c494c86a996527833b7b827110456",
+    "title": "Surrogate-assisted particle swarm optimization algorithm with Pareto active learning for expensive multi-objective optimization",
+    "year": 2019,
+    "citations": 133,
+    "venue": "IEEE/CAA Journal of Automatica Sinica",
+    "authors": "Zhiming Lv, Linqing Wang, Zhongyang Han et al.",
+    "has_pdf": true,
+    "rank": 2
+  },
+  {
+    "paperId": "89b2b8810704a7c14d03b5d56928ebbb30bc8063",
+    "title": "A Multi-Objective Active Learning Platform and Web App for Reaction Optimization.",
+    "year": 2022,
+    "citations": 126,
+    "venue": "Journal of the American Chemical Society",
+    "authors": "J. A. G. Torres, Sii Hong Lau, Pranay Anchuri et al.",
+    "has_pdf": true,
+    "rank": 3
+  },
+  {
+    "paperId": "3ee4cde5bf4d60e4930f463b64bfaa95b1bffd64",
+    "title": "Improving Multi-Objective Test Case Selection by Injecting Diversity in Genetic Algorithms",
+    "year": 2015,
+    "citations": 121,
+    "venue": "IEEE Transactions on Software Engineering",
+    "authors": "Annibale Panichella, Rocco Oliveto, M. D. Penta et al.",
+    "has_pdf": true,
+    "rank": 4
+  },
+  {
+    "paperId": "939edd8789458450c6527998f86552582b09ed79",
+    "title": "Sampling Reference Points on the Pareto Fronts of Benchmark Multi-Objective Optimization Problems",
+    "year": 2018,
+    "citations": 113,
+    "venue": "IEEE Congress on Evolutionary Computation",
+    "authors": "Ye Tian, Xiaoshu Xiang, Xing-yi Zhang et al.",
+    "has_pdf": true,
+    "rank": 5
+  },
+  {
+    "paperId": "ad62783d19c5ad5999c103e85b64f6c89ca65e9f",
+    "title": "An empirical study on pareto based multi-objective feature selection for software defect prediction",
+    "year": 2019,
+    "citations": 74,
+    "venue": "Journal of Systems and Software",
+    "authors": "Chao Ni, Xiang Chen, Fang Wu et al.",
+    "has_pdf": true,
+    "rank": 6
+  },
+  {
+    "paperId": "83b465e220132c5dd6bc2bdc93b077c8760c4975",
+    "title": "Sample-efficient Multi-objective Molecular Optimization with GFlowNets",
+    "year": 2023,
+    "citations": 61,
+    "venue": "Neural Information Processing Systems",
+    "authors": "Yiheng Zhu, Jialu Wu, Chaowen Hu et al.",
+    "has_pdf": true,
+    "rank": 7
+  },
+  {
+    "paperId": "38cd79916d320fc1f3110df9c3eab6a8f6785822",
+    "title": "Enhancing Test Case Prioritization in an Industrial Setting with Resource Awareness and Multi-objective Search",
+    "year": 2016,
+    "citations": 58,
+    "venue": "2016 IEEE/ACM 38th International Conference on Software Engineering Companion (ICSE-C)",
+    "authors": "Shuai Wang, Shaukat Ali, T. Yue et al.",
+    "has_pdf": true,
+    "rank": 8
+  },
+  {
+    "paperId": "f1d6b5946733431212464db53096c10fa6443447",
+    "title": "A Machine Learning Framework for Real-time Inverse Modeling and Multi-objective Process Optimization of Composites for Active Manufacturing Control",
+    "year": 2021,
+    "citations": 56,
+    "venue": "arXiv.org",
+    "authors": "K. D. Humfeld, Dawei Gu, Geoffrey A. Butler et al.",
+    "has_pdf": true,
+    "rank": 9
+  },
+  {
+    "paperId": "29802d6110a0314a15d3b6d382de2d2338610715",
+    "title": "Recommending relevant classes for bug reports using multi-objective search",
+    "year": 2016,
+    "citations": 55,
+    "venue": "International Conference on Automated Software Engineering",
+    "authors": "Rafi Almhana, Mohamed Wiem Mkaouer, Marouane Kessentini et al.",
+    "has_pdf": true,
+    "rank": 10
+  },
+  {
+    "paperId": "7f80824d5bac2c2f701777e81eaa245d5378a42f",
+    "title": "Review of surrogate model assisted multi-objective design optimization of electrical machines: New opportunities and challenges",
+    "year": 2025,
+    "citations": 51,
+    "venue": "Renewable & Sustainable Energy Reviews",
+    "authors": "Liyang Liu, Zequan Li, Haoyu Kang et al.",
+    "has_pdf": true,
+    "rank": 11
+  },
+  {
+    "paperId": "52554f1e7e691f4ee6913ac577e85a571d2e9dcc",
+    "title": "Multi-objective optimization of injection-molded plastic parts using entropy weight, random forest, and genetic algorithm methods",
+    "year": 2020,
+    "citations": 50,
+    "venue": "Journal of polymer engineering",
+    "authors": "Yanli Cao, Xiying Fan, Yong-huan Guo et al.",
+    "has_pdf": true,
+    "rank": 12
+  },
+  {
+    "paperId": "03636a6560a92cf2ab23c266ca59aabb0ce954a7",
+    "title": "Controller placement in software-defined WAN using multi objective genetic algorithm",
+    "year": 2015,
+    "citations": 46,
+    "venue": "International Conference on Knowledge-Based Engineering and Innovation",
+    "authors": "Ahmad Jalili, Vahid Ahmadi, M. Keshtgari et al.",
+    "has_pdf": true,
+    "rank": 13
+  },
+  {
+    "paperId": "82fd766ef7ee3944f4feb4a8c8812c93631c57a2",
+    "title": "The Weights Can Be Harmful: Pareto Search versus Weighted Search in Multi-objective Search-based Software Engineering",
+    "year": 2022,
+    "citations": 46,
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "authors": "Tao Chen, Miqing Li",
+    "has_pdf": true,
+    "rank": 14
+  },
+  {
+    "paperId": "6d3120af5f1dc596e99a5de47c84d419037f982e",
+    "title": "Low-carbon economic multi-objective dispatch of integrated energy system considering the price fluctuation of natural gas and carbon emission accounting",
+    "year": 2023,
+    "citations": 44,
+    "venue": "Protection and Control of Modern Power Systems",
+    "authors": "Minglei Qin, Yongbiao Yang, Xianqiu Zhao et al.",
+    "has_pdf": true,
+    "rank": 15
+  },
+  {
+    "paperId": "ebf8e2ac84b6bbb30f6d801fbb437dc1c7858a64",
+    "title": "Evolution-guided Bayesian optimization for constrained multi-objective optimization in self-driving labs",
+    "year": 2024,
+    "citations": 43,
+    "venue": "npj Computational Materials",
+    "authors": "Andre K. Y. Low, F. Mekki‐Berrada, Abhishek Gupta et al.",
+    "has_pdf": true,
+    "rank": 16
+  },
+  {
+    "paperId": "d7f60bc615712b589432a474369618eba8f938ca",
+    "title": "A framework for expensive many-objective optimization with Pareto-based bi-indicator infill sampling criterion",
+    "year": 2021,
+    "citations": 43,
+    "venue": "Memetic Computing",
+    "authors": "Zhenshou Song, Handing Wang, Hongbin Xu",
+    "has_pdf": true,
+    "rank": 17
+  },
+  {
+    "paperId": "79e3e326257ca88735624f79d74e87f71743481c",
+    "title": "Research on parameterization and optimization procedure of low-Reynolds-number airfoils based on genetic algorithm and Bezier curve",
+    "year": 2020,
+    "citations": 42,
+    "venue": "Advances in Engineering Software",
+    "authors": "Xuesong Wei, Xiaoyan Wang, Songying Chen",
+    "has_pdf": true,
+    "rank": 18
+  },
+  {
+    "paperId": "6b7013f9518d3101bcb4c06e5f2869d3dc41f624",
+    "title": "Multi-objective design of aircraft maintenance using Gaussian process learning and adaptive sampling",
+    "year": 2021,
+    "citations": 38,
+    "venue": "Reliability Engineering & System Safety",
+    "authors": "Juseong Lee, M. Mitici",
+    "has_pdf": true,
+    "rank": 19
+  },
+  {
+    "paperId": "60ad0e8febb6930f2c0b94955514ea0cebbf58b4",
+    "title": "Direction-oriented Multi-objective Learning: Simple and Provable Stochastic Algorithms",
+    "year": 2023,
+    "citations": 35,
+    "venue": "Neural Information Processing Systems",
+    "authors": "Peiyao Xiao, Hao Ban, Kaiyi Ji",
+    "has_pdf": true,
+    "rank": 20
+  },
+  {
+    "paperId": "507bd037f012d40988a8b5f281332532a8f6e9d7",
+    "title": "TA-ABC: Two-Archive Artificial Bee Colony for Multi-objective Software Module Clustering Problem",
+    "year": 2018,
+    "citations": 34,
+    "venue": "Journal of Intelligent Systems",
+    "authors": "Amarjeet Prajapati, J. Chhabra",
+    "has_pdf": true,
+    "rank": 21
+  },
+  {
+    "paperId": "b516cabbfce54898cce798e8bb36ef407dc2fdf2",
+    "title": "Control Parameters Considered Harmful: Detecting Range Specification Bugs in Drone Configuration Modules via Learning-Guided Search",
+    "year": 2021,
+    "citations": 32,
+    "venue": "International Conference on Software Engineering",
+    "authors": "Ruidong Han, Chao Yang, Siqi Ma et al.",
+    "has_pdf": true,
+    "rank": 22
+  },
+  {
+    "paperId": "b446ecbf05343bd7ba7bbf1178116093409ed620",
+    "title": "Multi-objective optimization of hybrid energy systems using gravitational search algorithm",
+    "year": 2025,
+    "citations": 31,
+    "venue": "Scientific Reports",
+    "authors": "S. M. Mahmoudi, Akbar Maleki, Dariush Rezaei Ochbelagh",
+    "has_pdf": true,
+    "rank": 23
+  },
+  {
+    "paperId": "3ecebe207999e162526d3e139ff580348da94f46",
+    "title": "CBGA-ES+: A Cluster-Based Genetic Algorithm with Non-Dominated Elitist Selection for Supporting Multi-Objective Test Optimization",
+    "year": 2018,
+    "citations": 27,
+    "venue": "IEEE Transactions on Software Engineering",
+    "authors": "D. Pradhan, Shuai Wang, Shaukat Ali et al.",
+    "has_pdf": true,
+    "rank": 24
+  },
+  {
+    "paperId": "0fce5802903bc3abb74a1cf457cebbe47d9b9065",
+    "title": "Multi-Objective Optimization Scheduling of Active Distribution Network Considering Large-Scale Electric Vehicles Based on NSGAII-NDAX Algorithm",
+    "year": 2023,
+    "citations": 27,
+    "venue": "IEEE Access",
+    "authors": "Jingwen Chen, Lei Mao, Yaoxian Liu et al.",
+    "has_pdf": true,
+    "rank": 25
+  },
+  {
+    "paperId": "f40ef8361e8346829a1c2c2e63fd606a1969b677",
+    "title": "Single-objective Versus Multi-objectivized Optimization for Evolutionary Crash Reproduction",
+    "year": 2018,
+    "citations": 24,
+    "venue": "International Symposium on Search Based Software Engineering",
+    "authors": "Mozhan Soltani, P. Derakhshanfar, Annibale Panichella et al.",
+    "has_pdf": true,
+    "rank": 26
+  },
+  {
+    "paperId": "72506e984f790d7a729ff465f36ffed81ac65e73",
+    "title": "Surrogate-guided multi-objective optimization (SGMOO) using an efficient online sampling strategy",
+    "year": 2021,
+    "citations": 24,
+    "venue": "Knowledge-Based Systems",
+    "authors": "Huachao Dong, Jinglu Li, Peng Wang et al.",
+    "has_pdf": true,
+    "rank": 27
+  },
+  {
+    "paperId": "80ad6fc30dae86488402479774ca2ea088c0667e",
+    "title": "Multi-Objective Optimization of Building Energy Saving Based on the Randomness of Energy-Related Occupant Behavior",
+    "year": 2024,
+    "citations": 22,
+    "venue": "Sustainability",
+    "authors": "Zhouchen Zhang, Jian Yao, Rongyue Zheng",
+    "has_pdf": true,
+    "rank": 28
+  },
+  {
+    "paperId": "a74d42ba1f15ba0002f7485ac4f0514bb8b4675c",
+    "title": "MMO: Meta Multi-Objectivization for Software Configuration Tuning",
+    "year": 2021,
+    "citations": 22,
+    "venue": "IEEE Transactions on Software Engineering",
+    "authors": "Tao Chen, Miqing Li",
+    "has_pdf": true,
+    "rank": 29
+  },
+  {
+    "paperId": "a553e37b999ed25d9938beede8ca17e963af09f8",
+    "title": "A Surrogate-Assisted Expensive Constrained Multi-Objective Optimization Algorithm Based on Adaptive Switching of Acquisition Functions",
+    "year": 2024,
+    "citations": 21,
+    "venue": "IEEE Transactions on Emerging Topics in Computational Intelligence",
+    "authors": "Haofeng Wu, Qingda Chen, Yaochu Jin et al.",
+    "has_pdf": true,
+    "rank": 30
+  },
+  {
+    "paperId": "2791ba6bf491c7f30489153be28812efd2ef03f1",
+    "title": "Process Parameter Selection for Production of Stainless Steel 316L Using Efficient Multi-Objective Bayesian Optimization Algorithm",
+    "year": 2023,
+    "citations": 21,
+    "venue": "Materials",
+    "authors": "Timur Chepiga, P. Zhilyaev, A. Ryabov et al.",
+    "has_pdf": true,
+    "rank": 31
+  },
+  {
+    "paperId": "5869bc716f754f581c8fc1186d8d3d105719f32b",
+    "title": "Surrogate-Assisted Evolutionary Multi-Objective Optimization of Medium-Scale Problems by Random Grouping and Sparse Gaussian Modeling",
+    "year": 2024,
+    "citations": 20,
+    "venue": "IEEE Transactions on Emerging Topics in Computational Intelligence",
+    "authors": "Haofeng Wu, Yaochu Jin, Kailai Gao et al.",
+    "has_pdf": true,
+    "rank": 32
+  },
+  {
+    "paperId": "6422c3853d7eeae9e7a39e7646afe1fa1d18c1d6",
+    "title": "Multi-objective Test Case Selection Through Linkage Learning-based Crossover",
+    "year": 2021,
+    "citations": 19,
+    "venue": "International Symposium on Search Based Software Engineering",
+    "authors": "Mitchell Olsthoorn, Annibale Panichella",
+    "has_pdf": true,
+    "rank": 33
+  },
+  {
+    "paperId": "743c3dfbd02def4f10fb9a5c17a0ed923d36429d",
+    "title": "Balancing Pareto Front exploration of Non-dominated Tournament Genetic Algorithm (B-NTGA) in solving multi-objective NP-hard problems with constraints",
+    "year": 2024,
+    "citations": 19,
+    "venue": "Information Sciences",
+    "authors": "Michał Antkiewicz, Paweł B. Myszkowski",
+    "has_pdf": true,
+    "rank": 34
+  },
+  {
+    "paperId": "acd42c56f786760fe9135798a0513d3d4becf19a",
+    "title": "A Brief Review on Multi-objective Software Refactoring and a New Method for Its Recommendation",
+    "year": 2020,
+    "citations": 17,
+    "venue": "Archives of Computational Methods in Engineering",
+    "authors": "Satnam Kaur, L. Awasthi, A. L. Sangal",
+    "has_pdf": true,
+    "rank": 35
+  },
+  {
+    "paperId": "ba4855dde116fab4b08cad5982a67a03b76589de",
+    "title": "Analysis of a many-objective optimization approach for identifying microservices from legacy systems",
+    "year": 2022,
+    "citations": 17,
+    "venue": "Empirical Software Engineering",
+    "authors": "W. K. Assunção, T. Colanzi, Luiz Carvalho et al.",
+    "has_pdf": true,
+    "rank": 36
+  },
+  {
+    "paperId": "11a769d70030208d2ca94985de9f20ffbe439258",
+    "title": "Dimensionality Reduction, Modelling, and Optimization of Multivariate Problems Based on Machine Learning",
+    "year": 2022,
+    "citations": 17,
+    "venue": "Symmetry",
+    "authors": "Mohammed Alswaitti, Kamran Siddique, Shulei Jiang et al.",
+    "has_pdf": true,
+    "rank": 37
+  },
+  {
+    "paperId": "ce59b4bd49299a3eba22a4fea500b86a5dc11e91",
+    "title": "Multi-Objective-Guided Discrete Flow Matching for Controllable Biological Sequence Design",
+    "year": 2025,
+    "citations": 17,
+    "venue": "arXiv.org",
+    "authors": "Tong Chen, Yinuo Zhang, Sophia Tang et al.",
+    "has_pdf": true,
+    "rank": 38
+  },
+  {
+    "paperId": "5ea00d650b667e967b4098b2a01a465173d2c5d1",
+    "title": "Analyzing the sensitivity of multi-objective software architecture refactoring to configuration characteristics",
+    "year": 2021,
+    "citations": 17,
+    "venue": "Information and Software Technology",
+    "authors": "V. Cortellessa, Daniele Di Pompeo",
+    "has_pdf": true,
+    "rank": 39
+  },
+  {
+    "paperId": "55139914c166a9ddf62922a01078ce73975c03ed",
+    "title": "Adapting Multi-objectivized Software Configuration Tuning",
+    "year": 2024,
+    "citations": 17,
+    "venue": "Proc. ACM Softw. Eng.",
+    "authors": "Tao Chen, Miqing Li",
+    "has_pdf": true,
+    "rank": 40
+  },
+  {
+    "paperId": "fd31351c2b43f34d2956761ade5ffec0041aa1cc",
+    "title": "Multi-objective optimization in machine learning assisted materials design and discovery",
+    "year": 2025,
+    "citations": 16,
+    "venue": "Journal of Materials Informatics",
+    "authors": "Pengcheng Xu, Yingying Ma, Wencong Lu et al.",
+    "has_pdf": true,
+    "rank": 41
+  },
+  {
+    "paperId": "9e34927dd7fa5d56072788b89fc85644e61979df",
+    "title": "Active Learning in Multi-objective Evolutionary Algorithms for Sustainable Building Design",
+    "year": 2016,
+    "citations": 15,
+    "venue": "Annual Conference on Genetic and Evolutionary Computation",
+    "authors": "S. Gilan, Naman Goyal, B. Dilkina",
+    "has_pdf": true,
+    "rank": 42
+  },
+  {
+    "paperId": "48d50533ee350ae0cc716a5586f361f71e772546",
+    "title": "Multi-Objective Optimization of Morphology in High-Rise Residential Areas for Outdoor Thermal Comfort in Yulin City, Northwest China",
+    "year": 2024,
+    "citations": 14,
+    "venue": "Buildings",
+    "authors": "Yuan Meng, Yunqi Hao, Yufei Que et al.",
+    "has_pdf": true,
+    "rank": 43
+  },
+  {
+    "paperId": "37afc98003c4f8385dfbf6307ab56c19309ce2d7",
+    "title": "PROUD: PaRetO-gUided diffusion model for multi-objective generation",
+    "year": 2024,
+    "citations": 14,
+    "venue": "Machine-mediated learning",
+    "authors": "Yinghua Yao, Yuangang Pan, Jing Li et al.",
+    "has_pdf": true,
+    "rank": 44
+  },
+  {
+    "paperId": "8be8aa0910382b54671e2e150d31c9df64f16c55",
+    "title": "Multi-objective search-based approach to estimate issue resolution time",
+    "year": 2017,
+    "citations": 13,
+    "venue": "International Conference on Predictive Models in Software Engineering",
+    "authors": "W. Al-Zubaidi, K. Dam, A. Ghose et al.",
+    "has_pdf": true,
+    "rank": 45
+  },
+  {
+    "paperId": "ff47e71842b03fba1eaa26563a38c553841a5192",
+    "title": "Data analysis with multi-objective optimization algorithm: A study in smart traffic signal system",
+    "year": 2017,
+    "citations": 13,
+    "venue": "International Conference on Software Engineering Research and Applications",
+    "authors": "P. Zhou, Zhiyi Fang, Hongliang Dong et al.",
+    "has_pdf": true,
+    "rank": 46
+  },
+  {
+    "paperId": "b0bf69d307308973232069e4691a6e5996439358",
+    "title": "Search Based Test Suite Minimization for Fault Detection and Localization: A Co-driven Method",
+    "year": 2016,
+    "citations": 13,
+    "venue": "International Symposium on Search Based Software Engineering",
+    "authors": "Jingyao Geng, Zheng Li, Ruilian Zhao et al.",
+    "has_pdf": true,
+    "rank": 47
+  },
+  {
+    "paperId": "f03074286282431a5afa1927cc79792d51980cb7",
+    "title": "ParetoFlow: Guided Flows in Multi-Objective Optimization",
+    "year": 2024,
+    "citations": 13,
+    "venue": "International Conference on Learning Representations",
+    "authors": "Ye Yuan, Can Chen, C. Pal et al.",
+    "has_pdf": true,
+    "rank": 48
+  },
+  {
+    "paperId": "2d85c074fa17ce88efba22ba24f6671efbf2910b",
+    "title": "A Review on Injection Molding: Conformal Cooling Channels, Modelling, Surrogate Models and Multi-Objective Optimization",
+    "year": 2025,
+    "citations": 12,
+    "venue": "Polymers",
+    "authors": "A. Gaspar-Cunha, J. Melo, T. Marques et al.",
+    "has_pdf": true,
+    "rank": 49
+  },
+  {
+    "paperId": "868012a120355b2911339cb3f6635c1620d7bd7b",
+    "title": "Pareto-guided active learning for accelerating surrogate-assisted multi-objective optimization of arch dam shape",
+    "year": 2025,
+    "citations": 11,
+    "venue": "Engineering structures",
+    "authors": "Rui Liu, G. Ma, Fanhui Kong et al.",
+    "has_pdf": true,
+    "rank": 50
+  },
+  {
+    "paperId": "0c1f9c443db948cf3daa1b7610a2a195217fef7b",
+    "title": "Augmented Fairness: An Interpretable Model Augmenting Decision-Makers' Fairness",
+    "year": 2020,
+    "citations": 11,
+    "venue": "arXiv.org",
+    "authors": "Tong Wang, M. Saar-Tsechansky",
+    "has_pdf": true,
+    "rank": 51
+  },
+  {
+    "paperId": "fbd9fd68134a9f12be983a8e131dbbfdb613f138",
+    "title": "Faster, Cheaper, Better: Multi-Objective Hyperparameter Optimization for LLM and RAG Systems",
+    "year": 2025,
+    "citations": 11,
+    "venue": "arXiv.org",
+    "authors": "Matthew Barker, Andrew Bell, Evan Thomas et al.",
+    "has_pdf": true,
+    "rank": 52
+  },
+  {
+    "paperId": "301b408021115b636474401d6bcdfa2dd92bb6cb",
+    "title": "Pareto Low-Rank Adapters: Efficient Multi-Task Learning with Preferences",
+    "year": 2024,
+    "citations": 11,
+    "venue": "International Conference on Learning Representations",
+    "authors": "Nikolaos Dimitriadis, Pascal Frossard, F. Fleuret",
+    "has_pdf": true,
+    "rank": 53
+  },
+  {
+    "paperId": "04289ccc35e69708dee81ff1a67dad4563c8f84b",
+    "title": "Are You Concerned about Limited Function Evaluations: Data-Augmented Pareto Set Learning for Expensive Multi-Objective Optimization",
+    "year": 2024,
+    "citations": 11,
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "authors": "Yongfan Lu, Bingdong Li, Aimin Zhou",
+    "has_pdf": true,
+    "rank": 54
+  },
+  {
+    "paperId": "65244d681a71d384be0862c58ab7992ea8178a2e",
+    "title": "A New Multitask Joint Learning Framework for Expensive Multi-Objective Optimization Problems",
+    "year": 2024,
+    "citations": 10,
+    "venue": "IEEE Transactions on Emerging Topics in Computational Intelligence",
+    "authors": "Jianping Luo, Yongfei Dong, Qiqi Liu et al.",
+    "has_pdf": true,
+    "rank": 55
+  },
+  {
+    "paperId": "c85fb0d9bfcf169247ee4c1e112f4d17d9a2f736",
+    "title": "AI-Driven Multi-Objective Optimization and Decision-Making for Urban Building Energy Retrofit: Advances, Challenges, and Systematic Review",
+    "year": 2025,
+    "citations": 10,
+    "venue": "Applied Sciences",
+    "authors": "Rudai Shan, Xiaohang Jia, Xuehua Su et al.",
+    "has_pdf": true,
+    "rank": 56
+  },
+  {
+    "paperId": "ec71317d2406283a1eae497ad1b40b53bcd9b170",
+    "title": "A hybrid criterion-based sample infilling strategy for surrogate-assisted multi-objective optimization",
+    "year": 2024,
+    "citations": 10,
+    "venue": "Structural And Multidisciplinary Optimization",
+    "authors": "Puyi Wang, Yingchun Bai, Cheng Lin et al.",
+    "has_pdf": true,
+    "rank": 57
+  },
+  {
+    "paperId": "a50a14343f91d8dfc8e43a12d6d20ab6fa8e85a1",
+    "title": "Multi-objective optimization method of injection molding process parameters based on hierarchical sampling and comprehensive entropy weights",
+    "year": 2024,
+    "citations": 10,
+    "venue": "The International Journal of Advanced Manufacturing Technology",
+    "authors": "Wei Zeng, Guo-dong Yi, Shuyou Zhang et al.",
+    "has_pdf": true,
+    "rank": 58
+  },
+  {
+    "paperId": "747afe48652bdb4e1c638dd0eb26fa58284cac50",
+    "title": "Sequential learning of the Pareto front for multi-objective bandits",
+    "year": 2025,
+    "citations": 10,
+    "venue": "International Conference on Artificial Intelligence and Statistics",
+    "authors": "Élise Crepon, Aurélien Garivier, Wouter M. Koolen",
+    "has_pdf": true,
+    "rank": 59
+  },
+  {
+    "paperId": "169d84e602a16c6278c4c4c80a96c4c0d042df0e",
+    "title": "Sampling of Pareto-Optimal Trajectories Using Progressive Objective Evaluation in Multi-Objective Motion Planning",
+    "year": 2018,
+    "citations": 10,
+    "venue": "IEEE/RJS International Conference on Intelligent RObots and Systems",
+    "authors": "Jeongseok Lee, Daqing Yi, S. Srinivasa",
+    "has_pdf": true,
+    "rank": 60
+  },
+  {
+    "paperId": "729a646641c7245dccec38ee5a235761dba5a897",
+    "title": "On the impact of Performance Antipatterns in multi-objective software model refactoring optimization",
+    "year": 2021,
+    "citations": 9,
+    "venue": "EUROMICRO Conference on Software Engineering and Advanced Applications",
+    "authors": "V. Cortellessa, Daniele Di Pompeo, V. Stoico et al.",
+    "has_pdf": true,
+    "rank": 61
+  },
+  {
+    "paperId": "e04631dc9d1254445a31b036501b2b2bfb0dfd76",
+    "title": "A heuristic for multi objective software application mappings on heterogeneous MPSoCs",
+    "year": 2019,
+    "citations": 9,
+    "venue": "Asia and South Pacific Design Automation Conference",
+    "authors": "Gereon Onnebrink, Ahmed Hallawa, R. Leupers et al.",
+    "has_pdf": true,
+    "rank": 62
+  },
+  {
+    "paperId": "2f236657156fa6dccd969d2f33cbf2fa686f5757",
+    "title": "Multi-objective trajectory planning for industrial robots using a hybrid optimization approach",
+    "year": 2024,
+    "citations": 9,
+    "venue": "Robotica (Cambridge. Print)",
+    "authors": "T. Chettibi",
+    "has_pdf": true,
+    "rank": 63
+  },
+  {
+    "paperId": "c8fc69390bb7b14a0fa625bfa697bda05c2e7e81",
+    "title": "Multi-Objective Biogeography-Based Method to Optimize Virtual Machine Consolidation",
+    "year": 2016,
+    "citations": 8,
+    "venue": "International Conference on Software Engineering and Knowledge Engineering",
+    "authors": "Kai Shi, Huiqun Yu, Fei Luo et al.",
+    "has_pdf": true,
+    "rank": 64
+  },
+  {
+    "paperId": "37657b016aeb2b6c3d8126dcffcbe3918f6eaec4",
+    "title": "Towards the support of user preferences in search-based product line architecture design: an exploratory study",
+    "year": 2019,
+    "citations": 8,
+    "venue": "Brazilian Symposium on Software Engineering",
+    "authors": "Carlos Vinícius Bindewald, W. Freire, A. Amaral et al.",
+    "has_pdf": true,
+    "rank": 65
+  },
+  {
+    "paperId": "457cbd60307e24995d83709eab3cc7ed4b428187",
+    "title": "Multilevel thresholding selection based on chaotic multi-verse optimization for image segmentation",
+    "year": 2016,
+    "citations": 8,
+    "venue": "International Joint Conference on Computer Science and Software Engineering",
+    "authors": "Tanachapong Wangchamhan, S. Chiewchanwattana, K. Sunat",
+    "has_pdf": true,
+    "rank": 66
+  },
+  {
+    "paperId": "0b022da1d02c4e77bcf78903a9e0e0251f5f91cc",
+    "title": "A Hybrid Adaptive Quantum Behaved Particle Swarm Optimization Algorithm Based Multilevel Thresholding for Image Segmentation",
+    "year": 2021,
+    "citations": 8,
+    "venue": "2021 IEEE International Conference on Information Communication and Software Engineering (ICICSE)",
+    "authors": "Hong-qi Wang, Xin Cheng, Guo-chao Chen",
+    "has_pdf": true,
+    "rank": 67
+  },
+  {
+    "paperId": "9a5f7bc3b967a1588b8dc31bdf4613a75e3c7cbb",
+    "title": "An active learning approach for multi-objective optimization and its application to the crashworthiness design of thin-walled structures",
+    "year": 2023,
+    "citations": 8,
+    "venue": "Optimization and Engineering",
+    "authors": "Da-wei Gao, Qiang Li, Zhe Liu et al.",
+    "has_pdf": true,
+    "rank": 68
+  },
+  {
+    "paperId": "3fdd1e1d33dbafe0a7b629494a2a723ed8314e5e",
+    "title": "Pareto-optimal sampling for multi-objective protein sequence design",
+    "year": 2025,
+    "citations": 8,
+    "venue": "iScience",
+    "authors": "Jiaqi Luo, Kerr Ding, Yunan Luo",
+    "has_pdf": true,
+    "rank": 69
+  },
+  {
+    "paperId": "b68373001e0db102c7ba73ee701a58d781011bca",
+    "title": "Traversing Pareto Optimal Policies: Provably Efficient Multi-Objective Reinforcement Learning",
+    "year": 2024,
+    "citations": 8,
+    "venue": "arXiv.org",
+    "authors": "Shuang Qiu, Dake Zhang, Rui Yang et al.",
+    "has_pdf": true,
+    "rank": 70
+  },
+  {
+    "paperId": "0aa8637a73b47f62248f485b2da694bc712157ce",
+    "title": "A multi-objective optimization based on machine learning for dimension precision of wax pattern in turbine blade manufacturing",
+    "year": 2024,
+    "citations": 7,
+    "venue": "Advances in Manufacturing",
+    "authors": "J. Dai, Songzhe Xu, Chaoyue Chen et al.",
+    "has_pdf": true,
+    "rank": 71
+  },
+  {
+    "paperId": "668133b651c94ff7392c7e01b713f4688cefc3e7",
+    "title": "Active learning-based multi-objective optimization for aerodynamic performance of a supercritical carbon dioxide turbine",
+    "year": 2022,
+    "citations": 7,
+    "venue": "Structural And Multidisciplinary Optimization",
+    "authors": "Peiyu Wang, Yuqi Wang, Tianyuan Liu et al.",
+    "has_pdf": true,
+    "rank": 72
+  },
+  {
+    "paperId": "9379484013693577023e5aca72b0a76c55b60add",
+    "title": "Configuration sampling in multi-component multi-sublattice systems enabled by ab Initio Configuration Sampling Toolkit (abICS)",
+    "year": 2023,
+    "citations": 7,
+    "venue": "Science and Technology of Advanced Materials: Methods",
+    "authors": "S. Kasamatsu, Yuichi Motoyama, K. Yoshimi et al.",
+    "has_pdf": true,
+    "rank": 73
+  },
+  {
+    "paperId": "33673ddd3591362f2e8f50746e518da4227c5ca3",
+    "title": "Evolutionary Preference Sampling for Pareto Set Learning",
+    "year": 2024,
+    "citations": 7,
+    "venue": "Annual Conference on Genetic and Evolutionary Computation",
+    "authors": "Rongguang Ye, Longcan Chen, Jinyuan Zhang et al.",
+    "has_pdf": true,
+    "rank": 74
+  },
+  {
+    "paperId": "2656ca99cc487f633083cd16e243a362b338a134",
+    "title": "A Multi-objective Approach to Prioritize and Recommend Bugs in Open Source Repositories",
+    "year": 2016,
+    "citations": 6,
+    "venue": "International Symposium on Search Based Software Engineering",
+    "authors": "Duany Dreyton, Allysson Allex Araújo, Altino Dantas et al.",
+    "has_pdf": true,
+    "rank": 75
+  },
+  {
+    "paperId": "1555bdc9a8300e0d5c4a7da50fc549c4e04ff6ca",
+    "title": "Efficient Management of Containers for Software Defined Vehicles",
+    "year": 2024,
+    "citations": 6,
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "authors": "Anwar Ghammam, Rania Khalsi, Marouane Kessentini et al.",
+    "has_pdf": true,
+    "rank": 76
+  },
+  {
+    "paperId": "130d739edc1baede38e487b095daea485b0083a8",
+    "title": "Surrogate-assisted constraint-handling technique for parametric multi-objective optimization",
+    "year": 2024,
+    "citations": 6,
+    "venue": "Structural And Multidisciplinary Optimization",
+    "authors": "Ying-Kuan Tsai, R. Malak",
+    "has_pdf": true,
+    "rank": 77
+  },
+  {
+    "paperId": "e6b2563b91bc96f804384e051386762411db834e",
+    "title": "Data-Driven SOA Parameter Discovery and Optimization Using Bayesian Machine Learning With a Parzen Estimator Surrogate",
+    "year": 2024,
+    "citations": 6,
+    "venue": "Journal of Lightwave Technology",
+    "authors": "R. Kraemer, Onur Düzgöl, Shi Li et al.",
+    "has_pdf": true,
+    "rank": 78
+  },
+  {
+    "paperId": "72523e63926167be4e9ff30c55a03ab43d51e920",
+    "title": "DeLag: Using Multi-Objective Optimization to Enhance the Detection of Latency Degradation Patterns in Service-Based Systems",
+    "year": 2021,
+    "citations": 5,
+    "venue": "IEEE Transactions on Software Engineering",
+    "authors": "Luca Traini, V. Cortellessa",
+    "has_pdf": true,
+    "rank": 79
+  },
+  {
+    "paperId": "56fcb16e02adf465f3a70308f945e0e2ba370a4e",
+    "title": "MIRROR: multi-objective refactoring recommendation via correlation analysis",
+    "year": 2023,
+    "citations": 5,
+    "venue": "International Conference on Automated Software Engineering",
+    "authors": "Yang Zhang, Ke Guan, Lining Fang",
+    "has_pdf": true,
+    "rank": 80
+  },
+  {
+    "paperId": "3110160ceca01c0a70a0df2ddb1b3dd5169085bf",
+    "title": "Improving the Performance of Many-Objective Software Refactoring Technique Using Dimensionality Reduction",
+    "year": 2016,
+    "citations": 5,
+    "venue": "International Symposium on Search Based Software Engineering",
+    "authors": "Troh Josselin Dea",
+    "has_pdf": true,
+    "rank": 81
+  },
+  {
+    "paperId": "c4336e070c61fca433c1ab84c005ce74b27110cd",
+    "title": "Multi-objective aerodynamic optimization using active multi-output Gaussian process and mesh deformation method",
+    "year": 2021,
+    "citations": 5,
+    "venue": "Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering",
+    "authors": "Fan Yang, Zhaolin Chen",
+    "has_pdf": true,
+    "rank": 82
+  },
+  {
+    "paperId": "7fb99e748d0c81d2fafe12d10ef7d229d8cce58f",
+    "title": "Hydrodynamic Shape Optimization of a Naval Destroyer by Machine Learning Methods",
+    "year": 2024,
+    "citations": 5,
+    "venue": "Journal of Marine Science and Engineering",
+    "authors": "A. Serani, Matteo Diez",
+    "has_pdf": true,
+    "rank": 83
+  },
+  {
+    "paperId": "e7c1e000b652f2423533ebdd8e07d843110a7b5e",
+    "title": "Multi-objective optimization of the dynamic performance of a suspended monorail vehicle based on an effective surrogate model",
+    "year": 2024,
+    "citations": 5,
+    "venue": "Engineering optimization (Print)",
+    "authors": "Yun Yang, Qinglie He, C. Cai et al.",
+    "has_pdf": true,
+    "rank": 84
+  },
+  {
+    "paperId": "4fb2fac9913aa056f24a24d3bea226dccb5b961c",
+    "title": "An adaptive sequential sampling strategy-based multi-objective optimization of aerodynamic configuration for a tandem-wing UAV via a surrogate model",
+    "year": 2021,
+    "citations": 5,
+    "venue": "IEEE Access",
+    "authors": "Q. Shi, Hua Wang, Hao Cheng et al.",
+    "has_pdf": true,
+    "rank": 85
+  },
+  {
+    "paperId": "892ca35b04a06c5898d4514288b67d75b5b7b3fc",
+    "title": "Automatic selection of the best neural architecture for time series forecasting via multi-objective optimization and Pareto optimality conditions",
+    "year": 2025,
+    "citations": 5,
+    "venue": "arXiv.org",
+    "authors": "Q. Cao, Shanqing Liu, Alan John Varghese et al.",
+    "has_pdf": true,
+    "rank": 86
+  },
+  {
+    "paperId": "77b71b16ceed3fb0ce657a0290113540e81dc07b",
+    "title": "C-MORL: Multi-Objective Reinforcement Learning through Efficient Discovery of Pareto Front",
+    "year": 2024,
+    "citations": 5,
+    "venue": "arXiv.org",
+    "authors": "Ruohong Liu, Yuxin Pan, Linjie Xu et al.",
+    "has_pdf": true,
+    "rank": 87
+  },
+  {
+    "paperId": "1bbe0a6dc953a8b5f0f8d62bd566218571d3c5ba",
+    "title": "MO-SMAC: Multi-objective Sequential Model-based Algorithm Configuration.",
+    "year": 2025,
+    "citations": 4,
+    "venue": "Evolutionary Computation",
+    "authors": "Jeroen G. Rook, C. Benjamins, Jakob Bossek et al.",
+    "has_pdf": true,
+    "rank": 88
+  },
+  {
+    "paperId": "394967494dd9afd0e6e9cf935f3543e26554965a",
+    "title": "Data-Efficient Interactive Multi-Objective Optimization Using ParEGO",
+    "year": 2024,
+    "citations": 4,
+    "venue": "arXiv.org",
+    "authors": "Arash Heidari, Sebastian Rojas-Gonzalez, T. Dhaene et al.",
+    "has_pdf": true,
+    "rank": 89
+  },
+  {
+    "paperId": "7363653539d78d1571b6948ff466d4aaa23c977a",
+    "title": "Pareto Front Approximation for Multi-Objective Session-Based Recommender Systems",
+    "year": 2024,
+    "citations": 4,
+    "venue": "ACM Conference on Recommender Systems",
+    "authors": "Timo Wilm, Philipp Normann, Felix Stepprath",
+    "has_pdf": true,
+    "rank": 90
+  },
+  {
+    "paperId": "b85a6d287f94f1d22358ea99f649a1bb7d1f9548",
+    "title": "MOEA/D with Adaptive Weights for Multi-objective Optimization Problems",
+    "year": 2023,
+    "citations": 3,
+    "venue": "2023 IEEE 3rd International Conference on Software Engineering and Artificial Intelligence (SEAI)",
+    "authors": "Xiangyu He, Qingyang Zhang",
+    "has_pdf": true,
+    "rank": 91
+  },
+  {
+    "paperId": "d350cdc819d01594d930ab3078959e9523fabe29",
+    "title": "Damage location in mechanical structures by multi-objective pattern search",
+    "year": 2024,
+    "citations": 3,
+    "venue": "Optimization and Engineering",
+    "authors": "Christian Günther, Benedikt Hofmeister, C. Hübler et al.",
+    "has_pdf": true,
+    "rank": 92
+  },
+  {
+    "paperId": "2a643f9846e1ca4db4d79ecf7aa7635f471d9cc6",
+    "title": "Multi-Objective Configuration Sampling for Performance Ranking in Configurable Systems",
+    "year": 2019,
+    "citations": 3,
+    "venue": "Asia-Pacific Software Engineering Conference",
+    "authors": "Yongfeng Gu, Yuntianyi Chen, Xiangyang Jia et al.",
+    "has_pdf": true,
+    "rank": 93
+  },
+  {
+    "paperId": "7a2a2974d310de82be423fda9d86495b2a4c2f67",
+    "title": "Active learning based surrogate ensemble assisted multi-objective optimization framework for reservoir water-flooding optimization",
+    "year": 2025,
+    "citations": 3,
+    "venue": "Journal of Petroleum Exploration and Production Technology",
+    "authors": "Lian Wang, Liang Zhang, Rui Deng et al.",
+    "has_pdf": true,
+    "rank": 94
+  },
+  {
+    "paperId": "0fb9058060e3e7b62fb7ff1fefeea37f7d3cb1dc",
+    "title": "ALMO: Active Learning-Based Multi-Objective Optimization for Accelerating Constrained Evolutionary Algorithms",
+    "year": 2024,
+    "citations": 3,
+    "venue": "Applied Sciences",
+    "authors": "Karanpreet Singh, R. Kapania",
+    "has_pdf": true,
+    "rank": 95
+  },
+  {
+    "paperId": "ead528e939aeb738faf991d1751d2c0c6da04f92",
+    "title": "Simulation-Driven Design Optimization of a Destroyer-Type Vessel via Multi-Fidelity Supervised Active Learning",
+    "year": 2023,
+    "citations": 3,
+    "venue": "Journal of Marine Science and Engineering",
+    "authors": "E. Spinosa, R. Pellegrini, A. Posa et al.",
+    "has_pdf": true,
+    "rank": 96
+  },
+  {
+    "paperId": "74997d53a72ccb8ac0f40fbab65504a8745bc86d",
+    "title": "Maximizing the Load Carrying Capacity of a Variable Stiffness Composite Cylinder Based on the Multi-Objective Optimization Method",
+    "year": 2020,
+    "citations": 3,
+    "venue": "",
+    "authors": "Yaochen Zheng, Ben Han, Jianqiao Chen et al.",
+    "has_pdf": true,
+    "rank": 97
+  },
+  {
+    "paperId": "38231bebfffedcc48a9325519a13e0bc403d2f97",
+    "title": "Multi-objective software test case selection based on density analysis",
+    "year": 2022,
+    "citations": 3,
+    "venue": "International Conference on Computer Science and Software Engineering",
+    "authors": "Huihui Jia, Cheng Zhang, Sijie Wu",
+    "has_pdf": true,
+    "rank": 98
+  },
+  {
+    "paperId": "dd6b9082cc92ce589cce7d48a673e9a66eda8f3d",
+    "title": "Multi-Objective Energy-Efficient Virtual Machine Consolidation Using Dynamic Double Threshold-Enhanced Search and Rescue-Based Optimization",
+    "year": 2022,
+    "citations": 2,
+    "venue": "International Journal of Software Science and Computational Intelligence",
+    "authors": "Sweta Singh, R. Kumar, U. P. Rao",
+    "has_pdf": true,
+    "rank": 99
+  },
+  {
+    "paperId": "886ad1d427819e0bb53dc3ef74f0cef298eb4a6f",
+    "title": "A Mobile Robot Path Planning Algorithm Based on Multi-objective Optimization",
+    "year": 2020,
+    "citations": 2,
+    "venue": "2020 3rd International Conference on Advanced Electronic Materials, Computers and Software Engineering (AEMCSE)",
+    "authors": "Haitao Guo, Yuxin Shang, Wenyao Qu",
+    "has_pdf": true,
+    "rank": 100
+  },
+  {
+    "paperId": "0c0569a6d1de6a164de7a28274bc6852b4eabf83",
+    "title": "Intensifying the search-based optimization of product line architectures with crossover operators",
+    "year": 2022,
+    "citations": 2,
+    "venue": "Empirical Software Engineering",
+    "authors": "Diego Fernandes da Silva, Luiz Fernando Okada, W. K. Assunção et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "0b0b6e11046593f1892eb2e1f1cc94f355d9fd1d",
+    "title": "Search based GUI Test Generation in Java - Comparing Code-based and EFG-based Optimization Goals",
+    "year": 2017,
+    "citations": 2,
+    "venue": "International Conference on Evaluation of Novel Approaches to Software Engineering",
+    "authors": "Mathias Menninghaus, Falk Wilke, Jan-Philipp Schleutker et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "7b34303a4d77de83c11d3124c9bc4cb4a2080c9d",
+    "title": "Automated design space exploration of multi-cycle transient fault detectable datapath based on multi-objective user constraints for application specific computing",
+    "year": 2015,
+    "citations": 2,
+    "venue": "Advances in Engineering Software",
+    "authors": "A. Sengupta, Saumya Bhadauria",
+    "has_pdf": true
+  },
+  {
+    "paperId": "f72e9b669f228bef0110520c3d2ddd40d98a8f41",
+    "title": "Multi-Agent Active Learning for Distributed Black-Box Optimization",
+    "year": 2023,
+    "citations": 2,
+    "venue": "IEEE Control Systems Letters",
+    "authors": "Loris Cannelli, Mengjia Zhu, F. Farina et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "0a33bd51e278ad4b0b695ba5881998f03c2d6fa0",
+    "title": "MoSH: Modeling Multi-Objective Tradeoffs with Soft and Hard Bounds",
+    "year": 2024,
+    "citations": 2,
+    "venue": "arXiv.org",
+    "authors": "Edward Chen, Natalie Dullerud, T. Niedermayr et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "163290ad3913cb0cee4c8d6adeb90112002cc5c9",
+    "title": "Code Clone Configuration as a Multi-Objective Search Problem",
+    "year": 2024,
+    "citations": 1,
+    "venue": "International Symposium on Empirical Software Engineering and Measurement",
+    "authors": "Denis Sousa, Matheus Paixão, Chaiyong Ragkhitwetsagul et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "a5a2b5f277df58861accc45b9ae9f7f165d98bff",
+    "title": "SMT-based Multi-objective Optimization for Scheduling of MPSoC Applications",
+    "year": 2019,
+    "citations": 1,
+    "venue": "Theoretical Aspects of Software Engineering",
+    "authors": "Rongjie Yan, Anyu Cai, Hongyu Gao et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "afab48cc6eb6a0c950a6991544939abbb32967d7",
+    "title": "Enhancing multi-objective test case selection through the mutation operator",
+    "year": 2025,
+    "citations": 1,
+    "venue": "International Conference on Automated Software Engineering",
+    "authors": "Miriam Ugarte, Pablo Valle, Miren Illarramendi et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "b14ad6e0dd8980d365ebe1f7b6d9e364240015f9",
+    "title": "Can Multi-Agent Consensus Improve Quality Tradeoffs in Software Architecture Optimization?",
+    "year": 2023,
+    "citations": 1,
+    "venue": "Conferencia Iberoamericana de Software Engineering",
+    "authors": "J. A. D. Pace, Santiago A. Vidal, Antonela Tommasel et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "dceadeb44451386b42e29a30905f50d9937f0e56",
+    "title": "Multi-Objective Optimization Design Based on Prototype High-Rise Office Buildings: A Case Study in Shandong, China",
+    "year": 2025,
+    "citations": 1,
+    "venue": "Buildings",
+    "authors": "Hangyue Zhang, Zhuang Zhi",
+    "has_pdf": true
+  },
+  {
+    "paperId": "91b94e04db232d20c3f6745d1791b75cf4ea0eeb",
+    "title": "Multi-Fidelity Fluid-Structure Interaction Optimization for Weight Reduction of High-Speed Small Craft",
+    "year": 2024,
+    "citations": 1,
+    "venue": "SNAME Power Boat Symposium",
+    "authors": "R. Pellegrini, Matteo Diez, Eric R. Kubina et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "657f4e5f5d56188cb90db5a01ae2d0c5c2f08dd0",
+    "title": "Efficient nanophotonic devices optimization using deep neural network trained with physics-based transfer learning methodology",
+    "year": 2025,
+    "citations": 1,
+    "venue": "Scientific Reports",
+    "authors": "Gibaek Kim, Jungho Kim",
+    "has_pdf": true
+  },
+  {
+    "paperId": "7be52b690a27a1b0da291c49d421529084d5de83",
+    "title": "An active learning multi-objective robust optimization framework via Gaussian process models under uncertainty",
+    "year": 2025,
+    "citations": 1,
+    "venue": "Engineering optimization (Print)",
+    "authors": "Zebiao Feng, Jianjun Wang, Weidong Huang",
+    "has_pdf": true
+  },
+  {
+    "paperId": "cca9108207122be06f5e1f15695bf1ec511fa653",
+    "title": "Efficient design of porous structures with superior mechanical properties using deep learning and multi-objective optimization",
+    "year": 2025,
+    "citations": 1,
+    "venue": "Structural And Multidisciplinary Optimization",
+    "authors": "E. Kononov, M. Tashkinov",
+    "has_pdf": true
+  },
+  {
+    "paperId": "b0f56ea0879485195020ba53d98101cfe7d995ac",
+    "title": "Parametric Pareto Set Learning for Expensive Multi-Objective Optimization",
+    "year": 2025,
+    "citations": 1,
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "authors": "Ji Cheng, Bo Xue, Qingfu Zhang",
+    "has_pdf": true
+  },
+  {
+    "paperId": "0174acaaaa09f2aa0cd2f41a1e287a3d5d2a45b8",
+    "title": "Methodology and Guidelines for Evaluating Multi-Objective Search-Based Software Engineering",
+    "year": 2023,
+    "citations": 1,
+    "venue": "2023 IEEE/ACM 45th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)",
+    "authors": "Miqing Li, Tao Chen",
+    "has_pdf": true
+  },
+  {
+    "paperId": "19448d073d88761925a2e1f5b92d03cc83423788",
+    "title": "Performance Optimization for Information Sharing Process of BlockIoV Based on Multi-Objective Particle Swarm",
+    "year": 2023,
+    "citations": 1,
+    "venue": "International Conference on Software Quality, Reliability and Security",
+    "authors": "X. Gu, Xingya Wang, Yu Ma et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "022c02e85bfe244d3fe376c6a335c0cd549b976b",
+    "title": "Multi-objective Software Quality Optimization Evaluation Model Based on Genetic Algorithm",
+    "year": 2025,
+    "citations": 0,
+    "venue": "2025 International Conference on Artificial Intelligence and Engineering Management (ICAIEM)",
+    "authors": "Baoping Wang, Gan Ping, Dongnan Lv",
+    "has_pdf": true
+  },
+  {
+    "paperId": "3e78f5942ccc10e4a1818efec60efc13b9f0354e",
+    "title": "A multi-objective optimization study of energy-saving job shop scheduling",
+    "year": 2025,
+    "citations": 0,
+    "venue": "2025 8th International Conference on Advanced Electronic Materials, Computers and Software Engineering (AEMCSE)",
+    "authors": "Tong Li, Shikui Zhao, Zhengyuan Wu et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "a8bbfc6b7131bc2a03c48fef62277520b7d81732",
+    "title": "Shift Based Penalty Competitive Constrained Multi-Objective Particle Swarm Optimization Algorithm",
+    "year": 2025,
+    "citations": 0,
+    "venue": "2025 IEEE 5th International Conference on Software Engineering and Artificial Intelligence (SEAI)",
+    "authors": "Ruichen Chen, Huicheng Li, Yaohua Lin",
+    "has_pdf": true
+  },
+  {
+    "paperId": "40d0892a3170071ee0fb0656d4cf57057495a3e0",
+    "title": "Multi-objective Flexible flow shop scheduling with limited buffers based on model-driven differential evolution algorithm",
+    "year": 2025,
+    "citations": 0,
+    "venue": "2025 2nd International Conference on Algorithms, Software Engineering and Network Security (ASENS)",
+    "authors": "Lixin Liang, Zhifeng Hao",
+    "has_pdf": true
+  },
+  {
+    "paperId": "4136bc46db26a184284300a68840253071453dbf",
+    "title": "Optimization of County-Level Highway Construction Organization Network Resources Based on Multi-Objective Evolutionary Algorithm",
+    "year": 2024,
+    "citations": 0,
+    "venue": "2024 Asia-Pacific Conference on Software Engineering, Social Network Analysis and Intelligent Computing (SSAIC)",
+    "authors": "Quan Wang, Zhu Xing",
+    "has_pdf": true
+  },
+  {
+    "paperId": "0f73e15f414f87d09dc8dbeb91ed86db41f90663",
+    "title": "On the role of search budgets in model-based software refactoring optimization",
+    "year": 2023,
+    "citations": 0,
+    "venue": "International Conference on Automated Software Engineering",
+    "authors": "J. A. Díaz-Pace, Daniele Di Pompeo, Michele Tucci",
+    "has_pdf": true
+  },
+  {
+    "paperId": "b395bad65124226b8f9fd22cbd4976a5afc7d5fc",
+    "title": "Multi-objective Antenna Design Based on Improved Sparrow Search Algorithm to Optimize BP Neural Network Surrogate Model",
+    "year": 2022,
+    "citations": 0,
+    "venue": "2022 IEEE 2nd International Conference on Software Engineering and Artificial Intelligence (SEAI)",
+    "authors": "Zhongxin Wang, Jian Qin, Zijiang Hu et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "2de50fbb8a7b235ac6cc64892956c746ef2e0d30",
+    "title": "Optimal Ship Pipe Route Design: A MOA*-Based Software Approach",
+    "year": 2025,
+    "citations": 0,
+    "venue": "Journal of Marine Science and Engineering",
+    "authors": "Zong-ran Dong, Kai Li, Heng Chen et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "cffc47a88882b74d74f89452dd506390e0a7796f",
+    "title": "Program Debloating via Multi-Granularity Stochastic Optimization",
+    "year": 2026,
+    "citations": 0,
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "authors": "Jinran Tang, Shufan Gong, Hao Chen et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "7517d7ca96f691a57fe6212e07afad09585ba739",
+    "title": "Software Testing Optimization for Large Systems using Agent-Based and NSGA-II Algorithms",
+    "year": 2023,
+    "citations": 0,
+    "venue": "Software Engineering Advances",
+    "authors": "Muhammad Abid Jamil, Mohamed K. Nour, Normi Sham Awang Abubakar",
+    "has_pdf": true
+  },
+  {
+    "paperId": "9f85f6af65744e39f0c00af373715a888af0c658",
+    "title": "Optimization of English Learning Activity Observation Management Software Based on Openstack Optimization: Based on Extreme Hybrid Testing Algorithm",
+    "year": 2023,
+    "citations": 0,
+    "venue": "International Journal of Science and Engineering Applications",
+    "authors": "Liu Yan",
+    "has_pdf": true
+  },
+  {
+    "paperId": "c0164818b001624e6426ec6fc3c20bbafefa6f21",
+    "title": "A Multi-Objective Evolutionary Algorithm Based on Adaptive Grid",
+    "year": 2019,
+    "citations": 0,
+    "venue": "International Conference on Information and Software Technologies",
+    "authors": "Bonan Yu, T. Gu, Liang Chang et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "5a4b6eb79e4d597c46ac53bbdc766e517edc2bd9",
+    "title": "Control over Distributed Topology of Wire-less Sensor Network based on Power Optimization",
+    "year": 2023,
+    "citations": 0,
+    "venue": "2023 4th International Conference on Big Data & Artificial Intelligence & Software Engineering (ICBASE)",
+    "authors": "Mingyu Nan, Zhaopeng He, Yifan Zhu et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "00f81aec72d3742bc565dc791d41b641ade89488",
+    "title": "Balancing the exploration-exploitation trade-off in active learning for surrogate model-based reliability analysis via multi-objective optimization",
+    "year": 2025,
+    "citations": 0,
+    "venue": "arXiv.org",
+    "authors": "Jonathan Morán, P. Morato",
+    "has_pdf": true
+  },
+  {
+    "paperId": "e825d315b1c88213543aef7cfd265629b6c157db",
+    "title": "Ensemble Surrogates and NSGA-II with Active Learning for Multi-Objective Optimization of WAG Injection in CO2-EOR",
+    "year": 2025,
+    "citations": 0,
+    "venue": "Energies",
+    "authors": "Yutong Zhu, Hao Li, Yan Zheng et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "ada27233e043912aa39cc5ef845c7c70fb1c6dc4",
+    "title": "Deep Reinforcement Learning for Multi-Objective Optimization of Automotive Semi-Active Suspension Systems",
+    "year": 2025,
+    "citations": 0,
+    "venue": "2025 9th CAA International Conference on Vehicular Control and Intelligence (CVCI)",
+    "authors": "Guoying Chen, Shiqi Cong, Zhenwei Zhang et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "57da31e75fd01870ab860516294cd362575a3051",
+    "title": "Active learning-enabled multi-objective design of thermally conductive and mechanically compliant polymers",
+    "year": 2026,
+    "citations": 0,
+    "venue": "",
+    "authors": "Yuhan Liu, Jiaxin Xu, Renzheng Zhang et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "bc5aa623e36196cac06044d5fdbf3fb90b38d225",
+    "title": "Optimal Design of Electric Machines Based on Surrogate Model with Active Learning",
+    "year": 2025,
+    "citations": 0,
+    "venue": "European Conference on Cognitive Ergonomics",
+    "authors": "Zhenyu Yan, Hao Chen, Jianqi Qiu et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "60fa3d5a76df12482259e454553c50624e487a96",
+    "title": "Metaheuristic Optimization of Control Rod Positioning in a Fast Breeder Reactor Core with Machine Learning-Based Surrogate Modelling for Fitness Evaluation",
+    "year": 2025,
+    "citations": 0,
+    "venue": "International Journal of Computational Intelligence Systems",
+    "authors": "S. Ramachandran, M. L. Jayalal, A. Riyas et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "7c2d2e7063fc5071b66741a80790b10523c134ed",
+    "title": "Accelerated Discovery of Cryoprotectant Cocktails via Multi-Objective Bayesian Optimization",
+    "year": 2026,
+    "citations": 0,
+    "venue": "arXiv.org",
+    "authors": "Daniel Emerson, Nora Gaby-Biegel, P. Joshi et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "1608ecf808141ef7be14247cea19cdb29ff1f564",
+    "title": "Excel-in-the-Loop Active Learning on KoMaP for Consumer Electronics Materials, with Extension to Battery Electrode AI Autonomous Manufacturing",
+    "year": 2025,
+    "citations": 0,
+    "venue": "2025 IEEE/IEIE International Conference on Consumer Electronics-Asia (ICCE-Asia)",
+    "authors": "Hyunjong Kim, Suyoung Chi, Yongkwi Lee",
+    "has_pdf": true
+  },
+  {
+    "paperId": "adfe7deeb5ec44200252e6507fa5f21343809bf5",
+    "title": "A Novel Sampling Method Based on Normal Search Particle Swarm Optimization for Active Learning Reliability Analysis",
+    "year": 2023,
+    "citations": 0,
+    "venue": "Applied Sciences",
+    "authors": "Yi-li Yuan, C. Hu, Liang Li et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "12afadeb96d5cd9e6d26b9266797567d1a24adb4",
+    "title": "Intelligent Optimization of Water Alternating Gas Flooding with Carbon Dioxide: A Win-Win Strategy for Enhancing Oil Recovery and Carbon Storage",
+    "year": 2024,
+    "citations": 0,
+    "venue": "58th U.S. Rock Mechanics/Geomechanics Symposium",
+    "authors": "Liang Zhang, Rui Deng, Bo Kang et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "54f3d6599c7b69338e582a267f41a6926111e334",
+    "title": "Deterministic Langevin Unconstrained Optimization with Normalizing Flows",
+    "year": 2023,
+    "citations": 0,
+    "venue": "arXiv.org",
+    "authors": "James M. Sullivan, U. Seljak",
+    "has_pdf": true
+  },
+  {
+    "paperId": "f991fbcbb45a1850322b2eeb01f73621ef791d34",
+    "title": "Decision Maker Preferences in Surrogate-Based Multi-objective Optimization: A Survey",
+    "year": 2025,
+    "citations": 0,
+    "venue": "Learning and Intelligent Optimization",
+    "authors": "Sasan Amini, Antonio Candelieri, I. Nieuwenhuyse",
+    "has_pdf": true
+  },
+  {
+    "paperId": "efc59f9ab6aaf154a1ac2d6a81b59ea64b2a1c35",
+    "title": "Parallelizing High Dimensional Surrogate-Based Discrete Multi-objective Optimization with Constraints",
+    "year": 2024,
+    "citations": 0,
+    "venue": "Learning and Intelligent Optimization",
+    "authors": "R. Regis",
+    "has_pdf": true
+  },
+  {
+    "paperId": "44810e60a79b9360242d4312ef05d03c1013c975",
+    "title": "ALMAB-DC: Active Learning, Multi-Armed Bandits, and Distributed Computing for Sequential Experimental Design and Black-Box Optimization",
+    "year": 2026,
+    "citations": 0,
+    "venue": "",
+    "authors": "Foo Hui-Mean, Y. Chang",
+    "has_pdf": true
+  },
+  {
+    "paperId": "1d0da825bf87405a68065a83c897d31659322d3e",
+    "title": "Efficient and Accurate Surrogate-Assisted Approach to Multi-objective Optimization Using Deep Neural Networks",
+    "year": 2025,
+    "citations": 0,
+    "venue": "International Conference on Evolutionary Multi-Criterion Optimization",
+    "authors": "Yihao Yang, Yuji Sato",
+    "has_pdf": true
+  },
+  {
+    "paperId": "abf7886b30caee2a51fd0d4d9301bc2cc84f9ce5",
+    "title": "Reinforcement Learning-Assisted Multi-Stage Evolutionary Constrained Multi-Objective optimization",
+    "year": 2025,
+    "citations": 0,
+    "venue": "ACM Transactions on Evolutionary Learning and Optimization",
+    "authors": "Langchun Si, Xingyi Zhang, Yajie Zhang et al.",
+    "has_pdf": true
+  },
+  {
+    "paperId": "6edfd5cbcf3b0534f4590a85cf6ddf1302a13884",
+    "title": "Graph Learning-based Dynamic Multi-objective Optimization Algorithm*",
+    "year": 2025,
+    "citations": 0,
+    "venue": "2025 7th International Conference on Data-driven Optimization of Complex Systems (DOCS)",
+    "authors": "ChiHua Wang, Wei Song",
+    "has_pdf": true
+  }
+]
