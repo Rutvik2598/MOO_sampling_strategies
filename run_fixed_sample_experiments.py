@@ -40,34 +40,85 @@ MIN_TEST_SIZE = 10  # Minimum test set size required
 
 MOOT_ROOT = Path("moot/optimize")
 
-# LARGE DATASETS - For scalability testing
-DATASET_PATHS_LARGE = {
-    "pom3a":        MOOT_ROOT / "process" / "pom3a.csv",         # 20,000 rows, 3 obj
-    "xomo_flight":  MOOT_ROOT / "process" / "xomo_flight.csv",   # 10,000 rows, 4 obj
-    "Scrum100k":    MOOT_ROOT / "binary_config" / "Scrum100k.csv", # 100,000 rows, 3 obj
-    "SS-W":         MOOT_ROOT / "config" / "SS-W.csv",           # 65,536 rows, 2 obj
+# SMALL DATASETS - 93 to ~3,000 rows
+DATASET_PATHS_SMALL = {
+    # --- Process / Software Engineering ---
+    "nasa93dem":       MOOT_ROOT / "process" / "nasa93dem.csv",                        # 93 rows,   3 obj
+    "auto93":          MOOT_ROOT / "misc" / "auto93.csv",                              # 398 rows,  3 obj
+    "pom3d":           MOOT_ROOT / "process" / "pom3d.csv",                            # 500 rows,  3 obj
+    "coc1000":         MOOT_ROOT / "process" / "coc1000.csv",                          # 1,000 rows, 5 obj
+    # --- Configuration spaces (SS family) ---
+    "SS-B":            MOOT_ROOT / "config" / "SS-B.csv",                              # 206 rows,  2 obj
+    "SS-H":            MOOT_ROOT / "config" / "SS-H.csv",                              # 259 rows,  2 obj
+    "SS-E":            MOOT_ROOT / "config" / "SS-E.csv",                              # 756 rows,  2 obj
+    "SS-M":            MOOT_ROOT / "config" / "SS-M.csv",                              # 864 rows,  3 obj
+    "SS-O":            MOOT_ROOT / "config" / "SS-O.csv",                              # 972 rows,  2 obj
+    "SS-I":            MOOT_ROOT / "config" / "SS-I.csv",                              # 1,080 rows, 2 obj
+    "SS-L":            MOOT_ROOT / "config" / "SS-L.csv",                              # 1,023 rows, 2 obj
+    "SS-P":            MOOT_ROOT / "config" / "SS-P.csv",                              # 1,023 rows, 2 obj
+    "SS-A":            MOOT_ROOT / "config" / "SS-A.csv",                              # 1,343 rows, 2 obj
+    "SS-C":            MOOT_ROOT / "config" / "SS-C.csv",                              # 1,512 rows, 2 obj
+    "SS-Q":            MOOT_ROOT / "config" / "SS-Q.csv",                              # 2,736 rows, 3 obj
+    # --- Binary config ---
+    "Scrum1k":         MOOT_ROOT / "binary_config" / "Scrum1k.csv",                    # 1,000 rows, 3 obj
+    # --- Misc / Real-world ---
+    "Car_price":       MOOT_ROOT / "misc" / "Car_price_cleaned.csv",                   # 205 rows,  5 obj
+    "Wine_quality":    MOOT_ROOT / "misc" / "Wine_quality.csv",                        # 1,599 rows, 2 obj
+    # --- Sales ---
+    "wallpaper":       MOOT_ROOT / "sales_data" / "wallpaper.csv",                     # 247 rows,  2 obj
+    "dress-up":        MOOT_ROOT / "sales_data" / "dress-up.csv",                      # 913 rows,  2 obj
+    "accessories":     MOOT_ROOT / "sales_data" / "accessories.csv",                   # 1,120 rows, 2 obj
+    "Marketing":       MOOT_ROOT / "sales_data" / "Marketing_Analytics.csv",           # 2,205 rows, 8 obj
+    # --- Financial / Behavioral ---
+    "home_data":       MOOT_ROOT / "financial_data" / "home_data_for_ml_course.csv",   # 1,459 rows, 4 obj
+    "HR_Attrition":    MOOT_ROOT / "behavior_data" / "WA_Fn-UseC_-HR-Employee-Attrition.csv",  # 1,469 rows, 3 obj
+    # --- Health ---
+    "Life_Expectancy": MOOT_ROOT / "health_data" / "Life_Expectancy_Data.csv",         # 2,938 rows, 2 obj
 }
 
-# ALL DATASETS - Combined collection (small-medium)
-DATASET_PATHS_ALL = {
-    # Original 6 datasets
-    "auto93":       MOOT_ROOT / "misc" / "auto93.csv",           # 398 rows, 3 obj
-    "pom3d":        MOOT_ROOT / "process" / "pom3d.csv",         # 500 rows, 3 obj
-    "SS-A":         MOOT_ROOT / "config" / "SS-A.csv",           # 1343 rows, 2 obj
-    "SS-B":         MOOT_ROOT / "config" / "SS-B.csv",           # 206 rows, 2 obj
-    "Wine_quality": MOOT_ROOT / "misc" / "Wine_quality.csv",     # 1599 rows, 2 obj
-    "coc1000":      MOOT_ROOT / "process" / "coc1000.csv",       # 1000 rows, 5 obj
-    # New datasets (moderate size, diverse domains)
-    "SS-M":         MOOT_ROOT / "config" / "SS-M.csv",           # 864 rows, 3 obj (database)
-    "SS-C":         MOOT_ROOT / "config" / "SS-C.csv",           # 1512 rows, 2 obj (stream)
-    "SS-I":         MOOT_ROOT / "config" / "SS-I.csv",           # 1080 rows, 2 obj (stream)
-    "home_data":    MOOT_ROOT / "financial_data" / "home_data_for_ml_course.csv",  # 1459 rows, 4 obj
-    "HR_Attrition": MOOT_ROOT / "behavior_data" / "WA_Fn-UseC_-HR-Employee-Attrition.csv",  # 1469 rows, 3 obj
-    "accessories":  MOOT_ROOT / "sales_data" / "accessories.csv", # 1120 rows, 2 obj
+# LARGE DATASETS - ~3,000 to 100,000 rows
+DATASET_PATHS_LARGE = {
+    # --- Configuration spaces (SS family, 3k-7k rows) ---
+    "SS-J":            MOOT_ROOT / "config" / "SS-J.csv",                              # 3,840 rows, 2 obj
+    "SS-K":            MOOT_ROOT / "config" / "SS-K.csv",                              # 2,880 rows, 2 obj
+    "SS-R":            MOOT_ROOT / "config" / "SS-R.csv",                              # 3,008 rows, 2 obj
+    "SS-S":            MOOT_ROOT / "config" / "SS-S.csv",                              # 3,840 rows, 2 obj
+    "SS-T":            MOOT_ROOT / "config" / "SS-T.csv",                              # 5,184 rows, 2 obj
+    "SS-U":            MOOT_ROOT / "config" / "SS-U.csv",                              # 4,608 rows, 2 obj
+    "SS-V":            MOOT_ROOT / "config" / "SS-V.csv",                              # 6,840 rows, 2 obj
+    # --- Financial / Telecom ---
+    "Telco":           MOOT_ROOT / "financial_data" / "WA_Fn-UseC_-Telco-Customer-Churn.csv",  # 7,043 rows,  2 obj
+    "BankChurners":    MOOT_ROOT / "financial_data" / "BankChurners.csv",              # 10,127 rows, 4 obj
+    # --- XOMO process (~10k rows) ---
+    "xomo_ground":     MOOT_ROOT / "process" / "xomo_ground.csv",                      # 10,000 rows, 4 obj
+    "xomo_flight":     MOOT_ROOT / "process" / "xomo_flight.csv",                      # 10,000 rows, 4 obj
+    "xomo_osp":        MOOT_ROOT / "process" / "xomo_osp.csv",                         # 10,000 rows, 4 obj
+    "xomo_osp2":       MOOT_ROOT / "process" / "xomo_osp2.csv",                        # 10,000 rows, 4 obj
+    # --- Binary config (~10k rows) ---
+    "Scrum10k":        MOOT_ROOT / "binary_config" / "Scrum10k.csv",                   # 10,000 rows, 3 obj
+    "FFM-250-SAT":     MOOT_ROOT / "binary_config" / "FFM-250-50-0.50-SAT-1.csv",      # 10,000 rows, 3 obj
+    "FFM-500-SAT":     MOOT_ROOT / "binary_config" / "FFM-500-100-0.50-SAT-1.csv",     # 10,000 rows, 3 obj
+    "FM-500-0.25":     MOOT_ROOT / "binary_config" / "FM-500-100-0.25-SAT-1.csv",      # 10,000 rows, 3 obj
+    "FM-500-0.50":     MOOT_ROOT / "binary_config" / "FM-500-100-0.50-SAT-1.csv",      # 10,000 rows, 3 obj
+    "FM-500-0.75":     MOOT_ROOT / "binary_config" / "FM-500-100-0.75-SAT-1.csv",      # 10,000 rows, 3 obj
+    "FM-500-1.00":     MOOT_ROOT / "binary_config" / "FM-500-100-1.00-SAT-1.csv",      # 10,000 rows, 3 obj
+    "billing10k":      MOOT_ROOT / "binary_config" / "billing10k.csv",                 # 10,000 rows, 3 obj
+    # --- HPO project health (~10k rows) ---
+    "Health-Issues0":  MOOT_ROOT / "hpo" / "Health-ClosedIssues0000.csv",              # 10,000 rows, 3 obj
+    "Health-Issues1":  MOOT_ROOT / "hpo" / "Health-ClosedIssues0001.csv",              # 10,000 rows, 3 obj
+    "Health-PRs0":     MOOT_ROOT / "hpo" / "Health-ClosedPRs0000.csv",                 # 10,000 rows, 2 obj
+    "Health-Commits0": MOOT_ROOT / "hpo" / "Health-Commits0000.csv",                   # 10,000 rows, 3 obj
+    # --- Large process (20k rows) ---
+    "pom3b":           MOOT_ROOT / "process" / "pom3b.csv",                            # 20,000 rows, 3 obj
+    "pom3c":           MOOT_ROOT / "process" / "pom3c.csv",                            # 20,000 rows, 3 obj
+    "pom3a":           MOOT_ROOT / "process" / "pom3a.csv",                            # 20,000 rows, 3 obj
+    # --- Scalability testing (very large) ---
+    "SS-W":            MOOT_ROOT / "config" / "SS-W.csv",                              # 65,536 rows, 2 obj
+    "Scrum100k":       MOOT_ROOT / "binary_config" / "Scrum100k.csv",                  # 100,000 rows, 3 obj
 }
 
 # SELECT WHICH DATASET SET TO RUN
-DATASET_PATHS = DATASET_PATHS_LARGE  # <- Change to DATASET_PATHS_ALL for small datasets
+DATASET_PATHS = DATASET_PATHS_LARGE  # <- Options: DATASET_PATHS_SMALL, DATASET_PATHS_LARGE
 
 # ============================================================================
 # DATASET LOADING
@@ -423,7 +474,7 @@ def main():
             'obj_directions': obj_dirs,
             'ignore_cols': ignore_cols,
         }
-        print(f"  ✓ {name:15s} | rows={len(df):5d} | features={len(feat_cols):2d} | objectives={len(obj_cols)}")
+        print(f"  [OK] {name:15s} | rows={len(df):5d} | features={len(feat_cols):2d} | objectives={len(obj_cols)}")
     
     # --- Compute true Pareto fronts ---
     print("\nComputing true Pareto fronts...")
@@ -433,7 +484,7 @@ def main():
         obj_normed = normalize_objectives(obj_vals, data['obj_directions'], data['obj_cols'])
         pf_indices = compute_pareto_front(obj_normed.values)
         true_pareto_fronts[name] = set(pf_indices)
-        print(f"  ✓ {name:15s} | Pareto front: {len(pf_indices):4d} / {len(data['df'])} ({100*len(pf_indices)/len(data['df']):.1f}%)")
+        print(f"  [OK] {name:15s} | Pareto front: {len(pf_indices):4d} / {len(data['df'])} ({100*len(pf_indices)/len(data['df']):.1f}%)")
     
     # --- Determine valid experiment configurations ---
     print("\nDetermining valid experiment configurations...")
@@ -442,7 +493,7 @@ def main():
         ds_size = len(data['df'])
         for sample_size in FIXED_SAMPLE_SIZES:
             if sample_size >= ds_size - MIN_TEST_SIZE:
-                print(f"  ⚠ Skipping {ds_name} (n={ds_size}) for sample_size={sample_size} (insufficient test data)")
+                print(f"  [SKIP] Skipping {ds_name} (n={ds_size}) for sample_size={sample_size} (insufficient test data)")
                 continue
             for method_name in SAMPLING_METHODS:
                 for rep in range(N_REPEATS):

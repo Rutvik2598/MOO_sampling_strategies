@@ -9,5 +9,14 @@ venv/
 __pycache__/
 *.pyc
 
+# LaTeX build artifacts
+*.log
+*.aux
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
 # macOS
 .DS_Store

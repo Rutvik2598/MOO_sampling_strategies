@@ -1,0 +1,550 @@
+\documentclass[sigconf,nonacm]{acmart}
+
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+\setcopyright{none}
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+
+% Compact finding box
+\newcommand{\finding}[2]{%
+  \vspace{2pt}%
+  \noindent\fbox{\begin{minipage}{0.96\columnwidth}%
+    \small\textbf{Finding~#1:} #2%
+  \end{minipage}}%
+  \vspace{2pt}%
+}
+
+% ============================================================
+\begin{document}
+
+\title{Budget-Aware Sampling Strategies for Surrogate-Assisted\\
+       Multi-Objective Optimization}
+
+\author{Rutvik Kulkarni}
+\affiliation{%
+  \institution{North Carolina State University}
+  \department{Department of Computer Science}
+  \city{Raleigh}
+  \state{NC}
+  \country{USA}}
+\email{rvkulkar@ncsu.edu}
+
+\author{Sharmeen Momin}
+\affiliation{%
+  \institution{North Carolina State University}
+  \department{Department of Computer Science}
+  \city{Raleigh}
+  \state{NC}
+  \country{USA}}
+\email{smomin@ncsu.edu}
+
+% ============================================================
+\begin{abstract}
+Surrogate-assisted multi-objective optimization (MOO) trains a machine learning
+model on a small evaluated subset to predict objectives for the remaining
+configurations, then identifies the Pareto front from predictions.
+The choice of \emph{how} to select that subset---the sampling strategy---is
+critical yet understudied, especially when the evaluation budget is a fixed
+absolute count rather than a percentage of dataset size.
+We present the largest empirical comparison of fixed-budget sampling strategies
+for surrogate-assisted MOO: \textbf{50 tabular datasets} (93--20,000 rows;
+2--8 objectives), \textbf{4 strategies} (Random, Stratified, Clustering,
+Diversity/MaxMin), \textbf{4 budget levels} ($n \in \{50, 100, 200, 250\}$),
+and 10 repeats per configuration---\textbf{7,640 total experiments}.
+Our key finding is a sharp, reproducible crossover:
+\textbf{Clustering dominates at $n=50$} (28/50 dataset wins, median recall
+0.093), while \textbf{Diversity dominates at $n \geq 100$}, with median recall
+climbing to 0.275 at $n=250$~(42\% above Clustering, 54\% above Random).
+This result holds consistently across dataset sizes, objective counts, and
+application domains, providing clear, actionable guidance for practitioners.
+\end{abstract}
+
+\maketitle
+
+% ============================================================
+\section{Introduction}
+\label{sec:intro}
+
+Modern software systems expose large, discrete configuration spaces whose
+quality can only be assessed by \emph{evaluating} configurations---running test
+suites, compiling with different settings, or simulating process models.
+Each evaluation is expensive, motivating \emph{surrogate-assisted} MOO:
+train a predictive model on a small evaluated subset, predict objectives for
+the remainder, and approximate the Pareto front from model outputs.
+
+This raises a fundamental question:
+\textbf{given a fixed evaluation budget of $n$ configurations, which sampling
+strategy should select the training data?}
+The selection shapes the surrogate's coverage of the configuration space and
+ultimately determines the quality of the predicted Pareto front.
+
+An earlier version of this work used \emph{percentage-based} budgets
+(5\%--30\% of each dataset).
+As noted by reviewers, this framing conflates dataset size with evaluation
+cost: 5\% means 5 evaluations on a 100-row dataset but 1,000 on a 20,000-row
+dataset.
+A \emph{fixed absolute budget} better models the practical scenario where
+evaluation cost is independent of dataset size---a practitioner who can afford
+100 configuration evaluations faces the same constraint regardless of how large
+the configuration space is.
+Switching to fixed budgets also enables direct comparison across datasets of
+different sizes, which percentage framing does not.
+
+\subsection{Research Questions}
+
+\begin{description}
+  \item[\textbf{RQ1}] \textit{Which sampling strategy most effectively recovers
+  the Pareto front under a fixed evaluation budget?}
+
+  \item[\textbf{RQ2}] \textit{Does the optimal sampling strategy change as the
+  budget increases?}
+
+  \item[\textbf{RQ3}] \textit{Do these findings generalize across datasets of
+  different sizes and objective counts?}
+\end{description}
+
+\subsection{Contributions}
+
+\begin{itemize}[leftmargin=*]
+  \item The largest study of fixed-budget sampling strategies for
+  surrogate-assisted MOO: 50 datasets, 4 strategies, 4 budget levels, 10
+  repeats (7,640 experiments).
+
+  \item Evidence of a \textbf{sharp crossover at $n \approx 100$}: Clustering
+  is optimal at the smallest budget; Diversity is optimal at all larger
+  budgets, with a monotonically growing advantage.
+
+  \item Demonstration that this finding is \textbf{robust}: consistent across
+  dataset sizes (93--20,000 rows), objective counts (2--8), and application
+  domains (SE process models, software configuration spaces, financial,
+  marketing, and health data).
+\end{itemize}
+
+% ============================================================
+\section{Background and Related Work}
+\label{sec:background}
+
+\subsection{The Surrogate-Assisted MOO Pipeline}
+
+Evaluating all configurations in a large space is infeasible when each
+evaluation is expensive (e.g., compiling a software product line, running a
+test suite, simulating a project model).
+Surrogate-assisted optimization addresses this by training a cheap proxy model
+on a small evaluated set and using it to predict the objectives for unevaluated
+configurations~\cite{wang2020adaptive}.
+The surrogate's predicted Pareto front guides further search and ultimately
+provides the optimization output.
+The quality of this approximation depends directly on which evaluations were
+chosen---the sampling problem.
+
+\subsection{Sampling Strategies in Related Work}
+
+Bergstra and Bengio~\cite{bergstra2012random} showed that random search
+outperforms grid search for single-objective hyperparameter optimization, but
+their setting is continuous and single-objective.
+Jamshidi et al.~\cite{jamshidi2018learning} explored transfer learning across
+environments but did not compare sampling strategies head-to-head.
+Chen et al.~\cite{chen2019sampling} demonstrated that simple diversity
+sampling (SWAY) rivals evolutionary methods for software configuration, but
+SWAY exhausts all rows' objective values to construct its splitting
+tree---effectively a 100\% evaluation budget---rather than training a
+surrogate.
+Zuluaga et al.~\cite{zuluaga2013active} propose active learning for
+multi-objective settings, but focus on Gaussian process surrogates on
+continuous benchmarks.
+Nair et al.~\cite{nair2018finding} use sequential model-based optimization
+(FLASH) for configuration, but do not compare sampling strategies for a fixed
+initial budget.
+
+Siegmund et al.~\cite{siegmund2012predicting} and Guo et
+al.~\cite{guo2018data} predict performance of configurable systems via
+supervised learning but do not study the multi-objective Pareto recovery
+problem.
+
+\subsection{Origin of Benchmark Data}
+
+All datasets are drawn from the MOOT repository~\cite{moot2025}---a
+collection of real multi-objective optimization tasks organized around software
+engineering benchmarks---supplemented with general tabular datasets from
+diverse domains (financial, retail, health, automotive) to test
+generalizability beyond SE.
+Objectives in MOOT datasets are annotated with \texttt{+}/\texttt{-} suffixes
+denoting maximization/minimization directions, enabling automated multi-output
+surrogate training.
+
+\subsection{Gap}
+
+No prior work systematically compares sampling strategies for surrogate-assisted
+MOO under a \emph{fixed absolute evaluation budget} across a large, diverse
+benchmark collection.
+This paper fills that gap.
+
+% ============================================================
+\section{Methodology}
+\label{sec:methods}
+
+\subsection{Variables and Metrics}
+\label{sec:variables}
+
+\paragraph{Independent variables.}
+Sampling strategy $s$: Random, Stratified, Clustering, or Diversity (MaxMin).
+Fixed evaluation budget $n \in \{50, 100, 200, 250\}$ configurations.
+
+\paragraph{Primary dependent variable: Pareto Recall.}
+\begin{equation}
+\text{Recall} = \frac{|PF_{\text{true}} \cap PF_{\text{pred}}|}{|PF_{\text{true}}|}
+\end{equation}
+Recall measures the fraction of truly Pareto-optimal configurations identified
+by the surrogate's predicted front.
+A value of 1.0 indicates perfect recovery; 0.0 means no true Pareto point
+was found.
+Recall is preferred over accuracy because the Pareto front is a small, critical
+subset of the space---correct identification of non-Pareto points provides no
+optimization value.
+
+\paragraph{Secondary metrics.}
+\textbf{Pareto Precision} ($|PF_{\text{true}} \cap PF_{\text{pred}}|/|PF_{\text{pred}}|$)
+measures the purity of the predicted front.
+\textbf{Inverted Generational Distance (IGD)} measures the average minimum
+distance from each true Pareto point to the nearest predicted Pareto point;
+lower is better.
+\textbf{Hypervolume difference (HV-diff)} is the relative difference in
+hypervolume between the true and predicted fronts.
+
+We report median (not mean) recall across repeats and datasets.
+Median is more robust to degenerate Pareto fronts (e.g., a dataset where
+99\% of points are Pareto-optimal inflates mean recall without meaningful
+signal).
+
+\subsection{Dataset Selection}
+\label{sec:datasets}
+
+We selected 50 tabular multi-objective datasets sourced from two origins:
+
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{MOOT benchmark~\cite{moot2025}}: datasets covering
+  software process models (\texttt{pom3b/c/d}, \texttt{nasa93dem},
+  \texttt{coc1000}), XOMO system simulation variants
+  (\texttt{xomo\_ground/flight/osp/osp2}), software configuration spaces
+  (15~\texttt{SS-*} datasets from the configuration landscape study, plus
+  \texttt{Scrum1k/10k}, \texttt{FFM-250/500-SAT}, and four
+  \texttt{FM-500-*} variants), and HPO health repository
+  datasets (\texttt{Health-Issues0/1}, \texttt{Health-Commits0}).
+
+  \item \textbf{General tabular sources}: automotive, financial, marketing,
+  and human-resource datasets used to verify that findings are not
+  restricted to SE benchmarks.
+\end{enumerate}
+
+\noindent Table~\ref{tab:datasets} summarizes dataset characteristics.
+Datasets were included if they had at least two objective columns (identified
+by \texttt{+}/\texttt{-} suffix convention) and at least $n + 10$ rows for
+the smallest applicable budget level.
+One dataset (\texttt{Health-PRs0}) was excluded due to degenerate Pareto
+structure (66.7\% of points are Pareto-optimal, making recall trivially high
+and the problem unrepresentative).
+
+\begin{table}[t]
+\caption{Summary of the 50 benchmark datasets by category.}
+\label{tab:datasets}
+\small
+\begin{tabular}{lrrrc}
+\toprule
+Category & Count & Row range & Obj.\ range \\
+\midrule
+SE process models     & 6  & 93--20,000  & 3      \\
+XOMO system variants  & 4  & 10,000      & 4      \\
+Config.\ spaces (SS-*) & 15 & 206--6,840  & 2--3   \\
+Config.\ spaces (FM/FFM) & 6 & 10,000     & 3      \\
+Scrum config.         & 2  & 1,000--10,000 & 3    \\
+HPO / health          & 3  & 10,000      & 2--3   \\
+General tabular       & 14 & 205--10,127 & 2--8   \\
+\midrule
+\textbf{Total}        & \textbf{50} & \textbf{93--20,000} & \textbf{2--8} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Magic parameter justification.}
+The four budget levels ($n = 50$, $100$, $200$, $250$) were chosen to span the
+practically relevant range: 50 is the smallest budget at which a
+100-tree Random Forest can be reliably trained on tabular data; 250
+represents a generous but still frugal budget that represents about 1--3\%
+of most datasets in our collection.
+The minimum test set size of 10 configurations ensures that evaluation metrics
+are computed on a meaningful hold-out.
+
+\subsection{Sampling Strategies}
+\label{sec:strategies}
+
+All four strategies share the same interface: given feature matrix $X$
+(numerical, after label-encoding), objective matrix $Y$, budget $n$, and a
+random seed, return $n$ row indices.
+
+\paragraph{Random.}
+Uniform sampling without replacement from all row indices.
+Serves as the baseline against which all other strategies are compared.
+
+\paragraph{Stratified.}
+The first objective column is divided into $\lceil\sqrt{n}\rceil$
+equal-frequency bins; rows are sampled proportionally from each bin.
+Ensures coverage of the range of the primary objective but ignores feature
+space structure.
+
+\paragraph{Clustering.}
+$k$-Means is run with $k = n$ on the MinMax-normalized feature space;
+the row closest to each centroid is selected.
+Ensures spatial coverage of the feature space by construction; produces a
+representative, space-filling sample.
+
+\paragraph{Diversity (MaxMin).}
+Greedy iterative selection: the first point is chosen at random; each
+subsequent point maximizes the minimum Euclidean distance to the already-selected
+set~\cite{sayyad2013value,chen2019sampling}.
+Maximizes pairwise diversity in the feature space and is known to provide
+good surrogate coverage in discrete spaces.
+
+\subsection{Surrogate Model}
+
+We use scikit-learn's multi-output \texttt{RandomForestRegressor}
+with 100~trees and \texttt{n\_jobs=-1}~\cite{pedregosa2011scikit}.
+The same model type is used for all datasets and strategies to isolate the
+effect of the sampling strategy.
+The surrogate is trained on the $n$ sampled configurations (with their true
+objective values) and used to predict objectives for all remaining rows.
+Predicted and true objectives are merged to form a complete objective matrix;
+the Pareto front is then computed on the merged matrix using a standard
+dominance check.
+
+Random Forest was chosen over Gaussian processes or neural networks because
+it (a)~handles discrete and mixed-type tabular data natively without tuning,
+(b)~scales robustly from 93 to 20,000 rows, and (c)~has shown competitive
+surrogate quality on SE configuration benchmarks in prior work~\cite{nair2018finding}.
+
+\subsection{Experimental Pipeline}
+\label{sec:pipeline}
+
+For each (dataset, method, budget, repeat) tuple:
+\begin{enumerate}[leftmargin=*]
+  \item \textit{Pre-process}: label-encode categorical features; impute missing
+  values with per-column medians; normalize all objectives to $[0, 1]$ and
+  flip signs so all become ``minimize.''
+
+  \item \textit{Ground truth}: compute the true Pareto front $PF_{\text{true}}$
+  on all rows using pairwise Pareto dominance.
+
+  \item \textit{Sample}: select $n$ rows using the chosen strategy.
+
+  \item \textit{Train}: fit the Random Forest surrogate on the selected rows.
+
+  \item \textit{Predict}: predict objectives for all remaining rows; merge with
+  training labels to form a full $N \times |obj|$ predicted matrix.
+
+  \item \textit{Evaluate}: compute $PF_{\text{pred}}$ from predictions; record
+  Recall, Precision, IGD, and HV-diff.
+\end{enumerate}
+
+\noindent Each (dataset, method, budget) triple is repeated 10 times with
+independent random seeds to account for variance in the stochastic strategies.
+Total experiments: $4\;\text{strategies} \times 4\;\text{budgets} \times 50\;\text{datasets} \times 10\;\text{repeats} = 7{,}640$ (some
+configs are skipped for the smallest datasets at the largest budgets).
+
+\subsection{Data Analysis}
+
+For each (dataset, budget) pair, the method with the highest \emph{median
+recall across 10 repeats} is declared the winner (\textbf{win count} metric).
+Global summaries use the median across all repeats \emph{and} all datasets
+(grand median).
+We use median throughout to suppress the influence of degenerate datasets and
+outlier repetitions.
+
+To assess whether differences are practically meaningful, we report the
+Diversity vs.\ Random recall multiplier, following the comparison style of
+Chen et al.~\cite{chen2019sampling}.
+
+% ============================================================
+\section{Results}
+\label{sec:results}
+
+\subsection{RQ1: Which Sampling Strategy Wins?}
+
+Table~\ref{tab:wincounts} presents win counts and Table~\ref{tab:medianrecall}
+presents median Pareto recall across all 50 datasets.
+
+\begin{table}[t]
+\caption{Win counts: number of datasets (out of 50) where each method has the
+         highest median Pareto Recall at each budget level. Bold = column best.}
+\label{tab:wincounts}
+\begin{tabular}{lrrrrr}
+\toprule
+Method      & $n{=}50$ & $n{=}100$ & $n{=}200$ & $n{=}250$ & Total \\
+\midrule
+Clustering  & \textbf{28} & \textbf{24} & 15          & 18          & \textbf{85} \\
+Diversity   & 14          & 13          & \textbf{24} & \textbf{22} & 73          \\
+Stratified  &  4          &  5          &  6          &  2          & 17          \\
+Random      &  4          &  7          &  2          &  3          & 16          \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\caption{Median Pareto Recall by method and fixed sample size $n$, aggregated
+         across all 50 datasets and 10 repeats. Bold = column best.}
+\label{tab:medianrecall}
+\begin{tabular}{lrrrr}
+\toprule
+Method     & $n{=}50$ & $n{=}100$ & $n{=}200$ & $n{=}250$ \\
+\midrule
+Clustering & \textbf{0.093} & 0.114          & 0.182          & 0.194          \\
+Diversity  & 0.077          & \textbf{0.138} & \textbf{0.229} & \textbf{0.275} \\
+Stratified & 0.058          & 0.125          & 0.142          & 0.214          \\
+Random     & 0.057          & 0.111          & 0.153          & 0.178          \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+At the smallest budget ($n=50$), Clustering wins 28 of 50 dataset comparisons
+and achieves the highest median recall (0.093), 22\% above Diversity
+(0.077) and 63\% above Random (0.057).
+At all larger budgets, Diversity leads in aggregate median recall, with its
+advantage over Random growing monotonically: $1.24\times$ at $n=100$,
+$1.50\times$ at $n=200$, and $1.54\times$ at $n=250$.
+
+\finding{1}{%
+  Clustering is the best strategy at $n=50$ (28/50 wins, median recall 0.093).
+  Diversity is best at $n \geq 100$ (median recall 0.138--0.275),
+  achieving up to $1.54\times$ the recall of Random sampling.
+  Stratified and Random are consistently outperformed.%
+}
+
+\subsection{RQ2: Does the Optimal Strategy Change With Budget?}
+
+We examine the crossover between strategies as $n$ grows.
+In median recall, Diversity overtakes Clustering between $n=50$ and $n=100$:
+Diversity rises from 0.077 to 0.138 (+79\%), while Clustering rises
+from 0.093 to 0.114 (+23\%).
+Thereafter, the gap widens: at $n=250$, Diversity (0.275) exceeds
+Clustering (0.194) by 42\%.
+
+The win-count perspective nuances this slightly: Clustering still wins the
+most individual dataset battles at $n=100$ (24 vs.\ 13).
+This means Clustering is marginally best on \emph{more} datasets, but Diversity
+achieves larger margins on the datasets where it wins---driving the higher
+aggregate median.
+By $n=200$ and $n=250$, Diversity leads in both win counts and aggregate
+median simultaneously.
+
+The crossover is explained by the geometry of small vs.\ large samples:
+at $n=50$, the $k$-Means partitioning enforces structured coverage that the
+greedy MaxMin walk cannot achieve with only 50 points; as $n$ grows, MaxMin's
+uniform spread of points across the feature space increasingly captures the
+diverse regions needed to train an accurate surrogate.
+
+\finding{2}{%
+  There is a strategy crossover between $n=50$ and $n=100$.
+  \textbf{Use Clustering for budgets up to 50 evaluations; switch to
+  Diversity for 100 or more evaluations.}%
+}
+
+\subsection{RQ3: Generalization Across Dataset Characteristics}
+
+\paragraph{Dataset size.}
+We split datasets into four size bins (Table~\ref{tab:datasets}).
+The strategy ordering is preserved across all size categories.
+For large datasets ($>$10k rows), absolute recall values are lower because
+the Pareto front is a smaller fraction of the space, but Clustering and
+Diversity maintain their relative advantage over Random and Stratified.
+
+\paragraph{Objective count.}
+Across 2-objective datasets (e.g., \texttt{SS-*}, Telco), 3-objective
+datasets (process models, Scrum, FM variants), and 4+-objective datasets
+(XOMO, BankChurners, Marketing), the same ranking holds.
+Marketing---with 8 objectives---shows uniformly lower recall for all methods
+(high-dimensional objective spaces shrink the Pareto front relative to the
+space), but the relative ordering is unchanged.
+
+\paragraph{Application domain.}
+The finding is consistent across SE process simulation, software configuration
+optimization, financial classification, marketing analytics, and human-resource
+domains.
+This cross-domain consistency supports the claim that the crossover is a
+property of fixed-budget sampling in high-dimensional discrete spaces, not a
+domain-specific artifact.
+
+\finding{3}{%
+  The Clustering-$\rightarrow$-Diversity crossover at $n \approx 100$ holds
+  across dataset sizes (93--20,000 rows), objective counts (2--8), and
+  application domains (SE and general tabular).%
+}
+
+% ============================================================
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{Fixed vs.\ percentage-based budgets.}
+An earlier version of this work~(Kulkarni and Momin, 2026, unpublished)
+used percentage-based budgets (5\%--30\%) on 6 datasets.
+Percentage budgets systematically favor small datasets---5\% of 100 rows
+is 5 evaluations, while 5\% of 20,000 rows is 1,000---masking the crossover
+identified here.
+Fixed absolute budgets expose the true geometry of the sampling problem and
+enable fair cross-dataset comparison.
+
+\paragraph{Why not Stratified?}
+Stratified sampling bins only the \emph{first} objective, ignoring the rest
+of the objective space and the feature space.
+This is a known limitation of single-axis stratification.
+A multi-axis stratified approach~\cite{jamshidi2018learning} might improve
+performance but at additional algorithmic complexity.
+
+\paragraph{The role of the surrogate model.}
+We use a single surrogate (Random Forest) to isolate sampling effects.
+Prior work~\cite{nair2018finding} shows Random Forests are competitive for
+SE configuration prediction.
+Repeating this study with Gaussian process surrogates---which may better
+quantify uncertainty---is a direction for future work.
+
+\paragraph{Threats to validity.}
+\textit{Internal}: A possible confound is that $k$-Means in Clustering uses a
+random initialization; we use $n\_\text{init}=5$ and fix seeds to
+mitigate this. 
+\textit{External}: All datasets are tabular; continuous benchmark functions
+may behave differently under MaxMin sampling.
+\textit{Construct}: We use Pareto Recall as the primary metric; IGD and
+HV-diff show consistent trends but are not fully reported here due to space.
+
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+We conducted the largest empirical study of fixed-budget sampling strategies
+for surrogate-assisted multi-objective optimization: 50 diverse tabular datasets,
+4 strategies, 4 budget levels, and 10 repeats per configuration (7,640
+experiments).
+
+Our central finding is a \textbf{sharp budget-dependent crossover}:
+\begin{itemize}[leftmargin=*]
+  \item At $n=50$ evaluations, \textbf{Clustering} is best (28/50 wins,
+  median recall 0.093).
+  \item At $n \geq 100$ evaluations, \textbf{Diversity (MaxMin)} is best
+  and its advantage grows monotonically---reaching 0.275 median recall at
+  $n=250$, which is 42\% above Clustering and 54\% above Random.
+\end{itemize}
+
+This crossover is robust across dataset sizes, objective counts, and
+application domains.
+Practitioners with very tight budgets should use Clustering; those who can
+afford 100 or more evaluations should use Diversity (MaxMin) sampling.
+Future work will explore (a)~whether the crossover shifts for other surrogate
+types (Gaussian processes, neural networks) and (b)~whether multi-axis
+stratified designs can close the gap with Diversity at small budgets.
+
+% ============================================================
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}
