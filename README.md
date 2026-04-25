@@ -4,20 +4,34 @@ Empirical comparison of fixed-budget sampling strategies for surrogate-assisted
 multi-objective optimization (MOO). Covers 50 tabular datasets, 4 strategies,
 4 budget levels, and 10 repeats per configuration (7,640 total experiments).
 
+**Paper:** [Moo_Sampling_Strategies.pdf](Moo_Sampling_Strategies.pdf) — full
+write-up with methodology, results, and discussion. The LaTeX source lives in
+[`report/`](report/).
+
 ## Research Summary
 
 Given a fixed evaluation budget of *n* configurations, which sampling strategy
 best recovers the Pareto front using a surrogate model?
 
-**Key finding:** There is a sharp crossover at *n* ≈ 100.
-- At *n = 50*: **Clustering** wins (28/50 datasets, median recall 0.093)
-- At *n ≥ 100*: **Diversity (MaxMin)** wins, reaching median recall 0.275 at *n = 250*
+**Key findings:**
+- **Recall (primary):** sharp crossover at *n* ≈ 100.
+  At *n = 50*, **Clustering** wins (28/50 datasets, median recall 0.093).
+  At *n ≥ 100*, **Diversity (MaxMin)** wins, reaching median recall 0.275 at
+  *n = 250* (1.54× Random, 1.42× Clustering).
+- **Secondary metrics (Precision, IGD, HV-diff):** Diversity is best at
+  nearly every budget — the only exception is Stratified marginally beating
+  Diversity on IGD at *n = 50* (0.084 vs. 0.089).
+- **Practical rule:** use Clustering when budget ≤ 50, Diversity when
+  budget ≥ 100.
 
 ## Project Structure
 
 ```
+├── Moo_Sampling_Strategies.pdf      # Compiled paper (final PDF)
 ├── run_fixed_sample_experiments.py  # Main experiment runner
 ├── merge_results.py                 # Aggregate results from results/ CSVs
+├── generate_figures.py              # Produce figures (recall, win counts, secondary metrics)
+├── generate_venn.py                 # Produce the literature-gap Venn diagram
 ├── requirements.txt                 # Python dependencies
 ├── moot/                            # Benchmark datasets (MOOT repository)
 │   └── optimize/
@@ -31,9 +45,13 @@ best recovers the Pareto front using a surrogate model?
 │       ├── health_data/             # Health datasets
 │       └── hpo/                     # HPO project health datasets
 ├── results/                         # Per-dataset result CSVs (one file per dataset)
-└── report/                          # LaTeX paper source
+└── report/                          # LaTeX paper source + generated figures
     ├── report.tex
-    └── references.bib
+    ├── references.bib
+    ├── venn_diagram.pdf / .png
+    ├── fig_recall_vs_budget.pdf / .png
+    ├── fig_win_counts.pdf / .png
+    └── fig_secondary_metrics.pdf / .png
 ```
 
 ## Setup
@@ -68,6 +86,16 @@ pip install -r requirements.txt
    ```bash
    python merge_results.py
    ```
+
+4. **Regenerate paper figures** from the merged results:
+
+   ```bash
+   python generate_figures.py   # recall, win counts, secondary metrics
+   python generate_venn.py      # literature-gap Venn diagram
+   ```
+
+   Outputs land in `report/` as both `.pdf` (vector, used by the paper) and
+   `.png` (preview).
 
 ## Sampling Strategies
 
